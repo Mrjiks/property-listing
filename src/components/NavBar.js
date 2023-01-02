@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import React from 'react';
 import { useGlobalContext } from './context';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 	const { toggleMenu } = useGlobalContext();
 	return (
 		<StyledNavBar>
 			<div className='hide-menu'>
-				<Link to='/'>Home</Link>
-				<Link to='/agents'>Agents</Link>
-				<Link to='/signin'>Sign In</Link>
+				<NavLink to='/'>Home</NavLink>
+				<NavLink to='/agents'>Agents</NavLink>
+				<NavLink to='/signin'>Sign In</NavLink>
 			</div>
 			<GiHamburgerMenu
 				className='mobile-menu'

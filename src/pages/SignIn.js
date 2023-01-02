@@ -210,6 +210,9 @@ const Wrapper = styled.main`
 			}
 		}
 	}
+	.active {
+		color: red;
+	}
 
 	@media (min-width: 768px) {
 		.container {
