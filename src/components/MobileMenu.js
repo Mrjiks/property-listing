@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useGlobalContext } from './context';
 
@@ -7,9 +8,9 @@ const MobileMenu = () => {
 	return (
 		<StyledMenuWrapper>
 			<div className='mobile-menu'>
-				<a href='/'>Home</a>
-				<a href='/agents'>Agents</a>
-				<a href='/sign-in'>Sign In</a>
+				<Link to='/'>Home</Link>
+				<Link to='agents'>Agents</Link>
+				<Link to='signin'>Sign In</Link>
 
 				<button
 					type='button'

@@ -9,8 +9,8 @@ const AppProvider = ({ children }) => {
 		setClass(`no-scroll`);
 	};
 	const toggleMenu = () => {
-		addClass();
 		setMenu(!showMenu);
+		addClass();
 	};
 
 	return (

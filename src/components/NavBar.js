@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import React from 'react';
-import MobileMenu from './MobileMenu';
 import { useGlobalContext } from './context';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 	const { toggleMenu } = useGlobalContext();
 	return (
 		<StyledNavBar>
 			<div className='hide-menu'>
-				<a href='/'>Home</a>
-				<a href='/agents'>Agents</a>
-				<a href='/sign-in'>Sign In</a>
+				<Link to='/'>Home</Link>
+				<Link to='/agents'>Agents</Link>
+				<Link to='/signin'>Sign In</Link>
 			</div>
 			<GiHamburgerMenu
 				className='mobile-menu'
@@ -46,6 +46,7 @@ const StyledNavBar = styled.nav`
 		color: black;
 		font-size: 20px;
 		margin-right: 1rem;
+		z-index: 10;
 	}
 	@media (min-width: 768px) {
 		.hide-menu {

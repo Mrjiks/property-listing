@@ -1,25 +1,27 @@
 import React from 'react';
-import {
-	SearchProperty,
-	HeroSection,
-	NavBarWrapper,
-	FeaturedProperty,
-	MobileMenu,
-} from './components';
-
-import { useGlobalContext } from './components/context';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Agents from './pages/Agents';
+import HomePage from './pages/HomePage';
+import SignIn from './pages/SignIn';
 
 function App() {
-	const { showMenu, customClass } = useGlobalContext();
-
 	return (
-		<div className={`${customClass}`}>
-			<NavBarWrapper />
-			<HeroSection />
-			<SearchProperty />
-			<FeaturedProperty />
-			{showMenu && <MobileMenu />}
-		</div>
+		<Router>
+			<Routes>
+				<Route
+					path='/'
+					element={<HomePage />}
+				/>
+				<Route
+					path='/signin'
+					element={<SignIn />}
+				/>
+				<Route
+					path='/agents'
+					element={<Agents />}
+				/>
+			</Routes>
+		</Router>
 	);
 }
 

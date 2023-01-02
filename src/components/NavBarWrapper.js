@@ -1,13 +1,16 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import NavBar from './NavBar';
 
 const NavBarWrapper = () => {
 	return (
 		<StyledWrapper>
-			<img
-				src='https://img.freepik.com/premium-vector/home-icon-house-symbol-simple-vector-design-logo_231786-5048.jpg?w=50'
-				alt=''
-			/>
+			<Link to='/'>
+				<img
+					src='https://img.freepik.com/premium-vector/home-icon-house-symbol-simple-vector-design-logo_231786-5048.jpg?w=50'
+					alt=''
+				/>
+			</Link>
 			<NavBar className='hide-menu' />
 		</StyledWrapper>
 	);

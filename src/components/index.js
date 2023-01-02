@@ -4,6 +4,7 @@ import NavBarWrapper from './NavBarWrapper';
 import SearchProperty from './SearchProperty';
 import FeaturedProperty from './FeaturedProperty';
 import MobileMenu from './MobileMenu';
+// import HomePage from './HomePage';
 
 export {
 	NavBar,
@@ -12,4 +13,5 @@ export {
 	NavBarWrapper,
 	FeaturedProperty,
 	MobileMenu,
+	// HomePage,
 };
