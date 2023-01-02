@@ -37,6 +37,12 @@ body {
 	margin: 0 auto;
 	/* background-color: #931243; */
 }
+/* .no-scroll {
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: red;
+} */
+
 @keyframes load-spinner {
 	to {
 		transform: rotate(360deg);

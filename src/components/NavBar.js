@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import React from 'react';
+import MobileMenu from './MobileMenu';
+import { useGlobalContext } from './context';
 
 const NavBar = () => {
+	const { toggleMenu } = useGlobalContext();
 	return (
 		<StyledNavBar>
 			<div className='hide-menu'>
@@ -9,7 +13,10 @@ const NavBar = () => {
 				<a href='/agents'>Agents</a>
 				<a href='/sign-in'>Sign In</a>
 			</div>
-			<GiHamburgerMenu className='mobile-menu' />
+			<GiHamburgerMenu
+				className='mobile-menu'
+				onClick={() => toggleMenu()}
+			/>
 		</StyledNavBar>
 	);
 };
