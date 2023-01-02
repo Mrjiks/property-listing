@@ -12,80 +12,83 @@ const SignIn = () => {
 			{showMenu && <MobileMenu />}
 			<NavBarWrapper />
 			<Wrapper>
-				<div className='ulo-pitch-container'>
-					<h1 className='ulo-pitch-header'>
-						List your property online in minutes!
-					</h1>
-					<p className='ulo-detail-pitch'>
-						<span>Ulo</span> provides enough value to ensure that our users are
-						the <span>most serious</span> property-hunters.
-					</p>
-					<div className='ulo-ads-container'>
-						<img
-							src='https://www.clipartmax.com/png/middle/288-2887094_globe-world-computer-icons-clip-art-global-logo-vector-free-download.png'
-							alt='globe'
-						/>
-
-						<p className='ulo-ads'>
-							Join several other users using <span>Ulo</span> to find and
-							provide shelters
+				<div className='container'>
+					<div className='ulo-pitch-container'>
+						<h1 className='ulo-pitch-header'>
+							List your property online in minutes!
+						</h1>
+						<p className='ulo-detail-pitch'>
+							<span>Ulo</span> provides enough value to ensure that our users
+							are the <span>most serious</span> property-hunters.
 						</p>
+						<div className='ulo-ads-container'>
+							<img
+								src='https://www.clipartmax.com/png/middle/288-2887094_globe-world-computer-icons-clip-art-global-logo-vector-free-download.png'
+								alt='globe'
+							/>
+
+							<p className='ulo-ads'>
+								Join several other users using <span>Ulo</span> to find and
+								provide shelters
+							</p>
+						</div>
 					</div>
-				</div>
-				<div className='form-wrapper'>
-					<div className='user-btn'>
-						<button
-							type='button'
-							className='btn-1'
-						>
-							User
-						</button>
-						<button
-							type='button'
-							className='btn-2'
-						>
-							Agent
-						</button>
-					</div>
-					<div>
-						<form>
-							<label htmlFor='name'>Full Name</label>
-							<div className='form-container'>
-								<input
-									type='text'
-									name='name'
-									id='name'
-									placeholder='John Doe'
-								/>
-								<input
-									type='email'
-									name='email'
-									id='email'
-									placeholder='Email address'
-								/>
-								<input
-									type='password'
-									name='password'
-									id='password'
-									placeholder='password'
-								/>
-								<button
-									type='submit'
-									className='btn-submit'
-								>
-									Register
-								</button>
-							</div>
-							<div className='cta-container'>
-								<p className='cta-text'>Signed up already? </p>
-								<Link
-									to='/'
-									className='cta-link'
-								>
-									<span>Sign In</span>
-								</Link>
-							</div>
-						</form>
+
+					<div className='form-wrapper'>
+						<div className='user-btn'>
+							<button
+								type='button'
+								className='btn-1'
+							>
+								User
+							</button>
+							<button
+								type='button'
+								className='btn-2'
+							>
+								Agent
+							</button>
+						</div>
+						<div>
+							<form>
+								<label htmlFor='name'>Full Name</label>
+								<div className='form-container'>
+									<input
+										type='text'
+										name='name'
+										id='name'
+										placeholder='John Doe'
+									/>
+									<input
+										type='email'
+										name='email'
+										id='email'
+										placeholder='Email address'
+									/>
+									<input
+										type='password'
+										name='password'
+										id='password'
+										placeholder='password'
+									/>
+									<button
+										type='submit'
+										className='btn-submit'
+									>
+										Register
+									</button>
+								</div>
+								<div className='cta-container'>
+									<p className='cta-text'>Signed up already? </p>
+									<Link
+										to='/'
+										className='cta-link'
+									>
+										<span>Sign In</span>
+									</Link>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</Wrapper>
@@ -132,7 +135,7 @@ const Wrapper = styled.main`
 				color: olivedrab;
 			}
 			img {
-				width: 30%;
+				width: 20%;
 				background: white;
 				margin-right: 0.5rem;
 			}
@@ -204,6 +207,38 @@ const Wrapper = styled.main`
 			.cta-container {
 				display: flex;
 				flex-direction: row;
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.container {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #f0fcfa;
+			border-radius: 8px;
+			margin-bottom: 20px;
+		}
+		.ulo-pitch-container {
+			padding: 1rem;
+		}
+		.form-wrapper {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			margin-left: 20px;
+			text-align: left;
+			background-color: white;
+			.cta-container {
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 20px;
+				span {
+					margin-left: 2rem;
+				}
 			}
 		}
 	}
