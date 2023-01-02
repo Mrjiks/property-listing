@@ -30,7 +30,7 @@ const StyledNavBar = styled.nav`
 	}
 	a:hover {
 		text-decoration: underline;
-		text-decoration-color: orangered;
+		text-decoration-color: white;
 	}
 	.hide-menu {
 		display: none;

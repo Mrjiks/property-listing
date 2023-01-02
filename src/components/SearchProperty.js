@@ -41,9 +41,12 @@ const StyledSearchWrapper = styled.main`
 		width: 100%;
 		height: 40px;
 		background-color: white;
+
 		button {
 			margin: 0.2rem;
 			width: 40%;
+			cursor: pointer;
+
 			:nth-child(3) {
 				color: white;
 				border-radius: 8px;
@@ -58,6 +61,7 @@ const StyledSearchWrapper = styled.main`
 		height: 45px;
 		width: 100%;
 		margin: 0 auto;
+
 		margin-bottom: 10px;
 		::placeholder {
 			color: white;
