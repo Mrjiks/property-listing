@@ -25,7 +25,7 @@ const StyledSearchWrapper = styled.main`
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 100%;
+	flex-basis: 1;
 
 	.search-form {
 		display: flex;
@@ -38,7 +38,7 @@ const StyledSearchWrapper = styled.main`
 		display: flex;
 		justify-content: space-around;
 		margin: 10px auto;
-		width: 90%;
+		width: 100%;
 		height: 40px;
 		background-color: white;
 		button {
@@ -56,7 +56,7 @@ const StyledSearchWrapper = styled.main`
 		border: none;
 		border-radius: 8px;
 		height: 45px;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		margin-bottom: 10px;
 		::placeholder {

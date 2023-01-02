@@ -19,8 +19,9 @@ export default NavBar;
 const StyledNavBar = styled.nav`
 	display: flex;
 	text-decoration: none;
+	flex-basis: 1;
+	align-items: center;
 	color: red;
-	margin: 10px;
 
 	a {
 		text-decoration: none;

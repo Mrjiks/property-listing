@@ -50,7 +50,7 @@ export default HeroSection;
 const StyledHeroWrapper = styled.main`
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	flex-basis: 1;
 	justify-content: space-between;
 	align-items: center;
 	background-color: gray;
@@ -58,7 +58,7 @@ const StyledHeroWrapper = styled.main`
 	.container {
 		display: flex;
 		flex-direction: column;
-		width: 90%;
+		width: 100%;
 
 		h1,
 		p {
@@ -132,7 +132,7 @@ const StyledHeroWrapper = styled.main`
 		.wrapper {
 			display: flex;
 			flex-direction: row;
-			width: 100%;
+			flex-basis: 1;
 		}
 		.container {
 			display: flex;
@@ -173,7 +173,7 @@ const StyledHeroWrapper = styled.main`
 			object-fit: cover;
 		}
 		.hero-img {
-			width: 65%;
+			width: 55%;
 		}
 	}
 `;

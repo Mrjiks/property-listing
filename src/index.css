@@ -4,12 +4,13 @@
 *::after {
 	box-sizing: border-box;
 }
-* {
-	margin: 0;
-}
 html,
 body {
 	height: 100%;
+}
+
+* {
+	margin: 0;
 }
 img {
 	display: block;
@@ -25,12 +26,14 @@ h5,
 h6 {
 	overflow-wrap: break-word;
 }
+
 body {
-	font-family: 'Poppins', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-family: Poppins, sans-serif;
+	width: 95vw;
+	margin: 0 auto;
 }
-
 @keyframes load-spinner {
 	to {
 		transform: rotate(360deg);

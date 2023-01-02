@@ -31,6 +31,8 @@ const StyledFeaturedWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: 10px auto;
+	flex-basis: 1;
+
 	.featured-info {
 		text-align: left;
 		margin: 10px;
@@ -38,14 +40,14 @@ const StyledFeaturedWrapper = styled.div`
 	.featured-container {
 		img {
 			margin: 10px auto;
-			width: 90%;
+			width: 100%;
 			border-radius: 8px;
 		}
 	}
 	.featured-details {
 		display: flex;
 		flex-direction: column;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
 	.price-info {

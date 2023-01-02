@@ -17,10 +17,10 @@ export default NavBarWrapper;
 
 const StyledWrapper = styled.div`
 	display: flex;
-	width: 95%;
+	flex-basis: 1;
 	justify-content: space-between;
 	align-items: center;
-	margin: 10px auto;
+	margin-bottom: 1rem;
 
 	img {
 		display: block;
