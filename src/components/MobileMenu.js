@@ -39,7 +39,7 @@ const StyledMenuWrapper = styled.div`
 		margin: 0 auto;
 		position: fixed;
 		inset: 0;
-		height: 70%;
+		height: 30vh;
 		background: olivedrab;
 
 		a {
@@ -53,11 +53,15 @@ const StyledMenuWrapper = styled.div`
 			text-decoration-color: white;
 		}
 		.close-btn {
-			width: 30%;
-			height: 40px;
+			width: 20%;
+			height: 30px;
 			border-radius: 8px;
-			margin: 0 auto;
 			color: olivedrab;
+			position: absolute;
+			bottom: 5px;
+			right: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 `;
