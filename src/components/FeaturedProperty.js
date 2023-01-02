@@ -57,9 +57,10 @@ const StyledFeaturedWrapper = styled.div`
 		margin: 0 auto;
 		margin-top: 10px;
 		.tag {
-			color: green;
-			background-color: #549880;
-			border-radius: 6px;
+			color: #f0fcfa;
+			background-color: olivedrab;
+			border-radius: 4px;
+			padding: 0.01rem;
 		}
 	}
 `;

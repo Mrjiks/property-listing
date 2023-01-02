@@ -47,12 +47,12 @@ const StyledSearchWrapper = styled.main`
 			:nth-child(3) {
 				color: white;
 				border-radius: 8px;
-				background: #ff8d4d;
+				background: olivedrab;
 			}
 		}
 	}
 	.search-input {
-		background: #ff8d4c;
+		background: olivedrab;
 		border: none;
 		border-radius: 8px;
 		height: 45px;

@@ -21,10 +21,11 @@ const StyledWrapper = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 1rem;
-
+	background-color: olivedrab;
 	img {
 		display: block;
 		max-width: 100%;
 		object-fit: cover;
+		padding: 1rem;
 	}
 `;

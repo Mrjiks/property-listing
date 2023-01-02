@@ -33,6 +33,7 @@ body {
 	font-family: Poppins, sans-serif;
 	width: 95vw;
 	margin: 0 auto;
+	/* background-color: #931243; */
 }
 @keyframes load-spinner {
 	to {

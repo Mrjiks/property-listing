@@ -53,7 +53,7 @@ const StyledHeroWrapper = styled.main`
 	flex-basis: 1;
 	justify-content: space-between;
 	align-items: center;
-	background-color: gray;
+	background-color: #f0fcfa;
 
 	.container {
 		display: flex;
@@ -71,7 +71,7 @@ const StyledHeroWrapper = styled.main`
 			text-align: left;
 		}
 		span {
-			color: #ff8d4c;
+			color: olivedrab;
 		}
 		.cta-container {
 			background-color: white;
@@ -87,7 +87,7 @@ const StyledHeroWrapper = styled.main`
 			width: 60%;
 			height: 38px;
 			border-radius: 8px;
-			background-color: #ff8d4c;
+			background-color: olivedrab;
 			color: white;
 			margin-right: 20px;
 		}
@@ -116,7 +116,7 @@ const StyledHeroWrapper = styled.main`
 			}
 			.location-logo {
 				font-size: 20px;
-				color: red;
+				color: olivedrab;
 				margin-right: 2rem;
 			}
 		}
@@ -149,7 +149,7 @@ const StyledHeroWrapper = styled.main`
 				text-align: left;
 			}
 			span {
-				color: orangered;
+				color: olivedrab;
 			}
 			.cta-container {
 				background-color: white;
@@ -162,7 +162,7 @@ const StyledHeroWrapper = styled.main`
 				width: 60px;
 				height: 25px;
 				border-radius: 8px;
-				background-color: orangered;
+				background-color: olivedrab;
 				color: white;
 				margin-right: 20px;
 			}

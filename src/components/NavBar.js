@@ -21,12 +21,16 @@ const StyledNavBar = styled.nav`
 	text-decoration: none;
 	flex-basis: 1;
 	align-items: center;
-	color: red;
 
 	a {
 		text-decoration: none;
-		margin: 10px;
 		text-transform: capitalize;
+		color: white;
+		margin-right: 2rem;
+	}
+	a:hover {
+		text-decoration: underline;
+		text-decoration-color: orangered;
 	}
 	.hide-menu {
 		display: none;
@@ -34,6 +38,7 @@ const StyledNavBar = styled.nav`
 	.mobile-menu {
 		color: black;
 		font-size: 20px;
+		margin-right: 1rem;
 	}
 	@media (min-width: 768px) {
 		.hide-menu {
