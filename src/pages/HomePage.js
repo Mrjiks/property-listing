@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import {
 	SearchProperty,
 	HeroSection,
@@ -10,7 +12,7 @@ import {
 import { useGlobalContext } from '../components/context';
 
 function HomePage() {
-	const { showMenu, customClass } = useGlobalContext();
+	const { showMenu } = useGlobalContext();
 
 	return (
 		<div>
@@ -24,3 +26,7 @@ function HomePage() {
 }
 
 export default HomePage;
+
+const Wrapper = styled.div`
+	display: flex;
+`;

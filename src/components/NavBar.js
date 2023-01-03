@@ -3,9 +3,10 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import React from 'react';
 import { useGlobalContext } from './context';
 import { NavLink } from 'react-router-dom';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const NavBar = () => {
-	const { toggleMenu } = useGlobalContext();
+	const { toggleMenu, showMenu } = useGlobalContext();
 	return (
 		<StyledNavBar>
 			<div className='hide-menu'>
@@ -13,10 +14,17 @@ const NavBar = () => {
 				<NavLink to='/agents'>Agents</NavLink>
 				<NavLink to='/signin'>Sign In</NavLink>
 			</div>
-			<GiHamburgerMenu
+			<button
+				type='button'
 				className='mobile-menu'
 				onClick={() => toggleMenu()}
-			/>
+			>
+				{!showMenu ? (
+					<GiHamburgerMenu className='menu-bar' />
+				) : (
+					<AiOutlineClose className='menu-close' />
+				)}
+			</button>
 		</StyledNavBar>
 	);
 };
@@ -43,10 +51,16 @@ const StyledNavBar = styled.nav`
 		display: none;
 	}
 	.mobile-menu {
-		color: black;
-		font-size: 20px;
+		color: white;
+		font-size: 30px;
 		margin-right: 1rem;
-		z-index: 10;
+		background-color: olivedrab;
+		border: none;
+
+		/* z-index: 100; */
+	}
+	.menu-close {
+		color: orangered;
 	}
 	@media (min-width: 768px) {
 		.hide-menu {

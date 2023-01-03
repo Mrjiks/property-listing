@@ -55,8 +55,8 @@ const StyledSearchWrapper = styled.main`
 		}
 	}
 	.search-input {
-		background: olivedrab;
-		border: none;
+		background-color: #f0fcfa;
+		border: 1px solid olivedrab;
 		border-radius: 8px;
 		height: 45px;
 		width: 100%;
@@ -64,7 +64,7 @@ const StyledSearchWrapper = styled.main`
 
 		margin-bottom: 10px;
 		::placeholder {
-			color: white;
+			color: olivedrab;
 			text-align: center;
 		}
 	}

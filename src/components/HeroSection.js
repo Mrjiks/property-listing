@@ -90,7 +90,6 @@ const StyledHeroWrapper = styled.main`
 			background-color: olivedrab;
 			color: white;
 			margin-right: 20px;
-			cursor: pointer;
 		}
 
 		.rent-btn {
@@ -98,7 +97,6 @@ const StyledHeroWrapper = styled.main`
 			color: black;
 			margin-right: 20px;
 			background-color: white;
-			cursor: pointer;
 		}
 
 		.location-container {
@@ -120,7 +118,6 @@ const StyledHeroWrapper = styled.main`
 				font-size: 20px;
 				color: olivedrab;
 				margin-right: 2rem;
-				cursor: pointer;
 			}
 		}
 	}

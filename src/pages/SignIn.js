@@ -155,7 +155,7 @@ const Wrapper = styled.main`
 			margin-bottom: 2rem;
 			margin-top: 2rem;
 			border: 2px solid olivedrab;
-			width: 60%;
+			width: 50%;
 			height: 30px;
 			display: flex;
 			border-radius: 20px;
