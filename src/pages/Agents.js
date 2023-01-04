@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { MobileMenu, NavBarWrapper } from '../components';
+import { MobileMenu } from '../components';
 import { useGlobalContext } from '../components/context';
 
 const Agents = () => {
@@ -8,11 +7,10 @@ const Agents = () => {
 	return (
 		<div>
 			{showMenu && <MobileMenu />}
-			<NavBarWrapper />
+
 			<div>
 				<h1>Agents Dashboard</h1>
 			</div>
-			<Link to='/'>Go Home</Link>
 		</div>
 	);
 };

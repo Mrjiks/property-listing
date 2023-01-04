@@ -11,7 +11,7 @@ import {
 
 import { useGlobalContext } from '../components/context';
 
-function HomePage() {
+function Landing() {
 	const { showMenu } = useGlobalContext();
 
 	return (
@@ -25,7 +25,7 @@ function HomePage() {
 	);
 }
 
-export default HomePage;
+export default Landing;
 
 const Wrapper = styled.div`
 	display: flex;

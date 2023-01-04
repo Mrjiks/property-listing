@@ -4,7 +4,9 @@ import NavBarWrapper from './NavBarWrapper';
 import SearchProperty from './SearchProperty';
 import FeaturedProperty from './FeaturedProperty';
 import MobileMenu from './MobileMenu';
-// import HomePage from './HomePage';
+import DashboardNav from './DashboardNav';
+import SideBarLogo from './SideBarLogo';
+import DashboardIcons from './DashboardIcons';
 
 export {
 	NavBar,
@@ -13,5 +15,7 @@ export {
 	NavBarWrapper,
 	FeaturedProperty,
 	MobileMenu,
-	// HomePage,
+	SideBarLogo,
+	DashboardNav,
+	DashboardIcons,
 };

@@ -10,8 +10,8 @@ const NavBar = () => {
 	return (
 		<StyledNavBar>
 			<div className='hide-menu'>
-				<NavLink to='/'>Home</NavLink>
-				<NavLink to='/agents'>Agents</NavLink>
+				<NavLink to='/landing'>Home</NavLink>
+				<NavLink to='/'>Agents</NavLink>
 				<NavLink to='/signin'>Sign In</NavLink>
 			</div>
 			<button

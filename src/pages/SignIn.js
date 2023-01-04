@@ -6,7 +6,7 @@ import { useGlobalContext } from '../components/context';
 
 const SignIn = () => {
 	const { showMenu } = useGlobalContext();
-
+	const [checkName, setName] = React.useState(true);
 	return (
 		<>
 			{showMenu && <MobileMenu />}
@@ -51,14 +51,20 @@ const SignIn = () => {
 						</div>
 						<div>
 							<form>
-								<label htmlFor='name'>Full Name</label>
+								{checkName ? (
+									<label htmlFor='name'>Full Name</label>
+								) : (
+									<label htmlFor='signin'>Login</label>
+								)}
 								<div className='form-container'>
-									<input
-										type='text'
-										name='name'
-										id='name'
-										placeholder='John Doe'
-									/>
+									{checkName && (
+										<input
+											type='text'
+											name='name'
+											id='name'
+											placeholder='John Doe'
+										/>
+									)}
 									<input
 										type='email'
 										name='email'
@@ -75,16 +81,13 @@ const SignIn = () => {
 										type='submit'
 										className='btn-submit'
 									>
-										Register
+										{checkName ? 'Register' : 'Login'}
 									</button>
 								</div>
 								<div className='cta-container'>
 									<p className='cta-text'>Signed up already? </p>
-									<Link
-										to='/'
-										className='cta-link'
-									>
-										<span>Sign In</span>
+									<Link className='cta-link'>
+										<span onClick={() => setName(!checkName)}>Sign In</span>
 									</Link>
 								</div>
 							</form>
