@@ -12,6 +12,12 @@ const AppProvider = ({ children }) => {
 		setMenu(!showMenu);
 		addClass();
 	};
+	const closeMenu = () => {
+		if (showMenu) {
+			setMenu(!showMenu);
+		}
+		addClass();
+	};
 
 	return (
 		<AppContext.Provider
@@ -19,6 +25,7 @@ const AppProvider = ({ children }) => {
 				showMenu,
 				toggleMenu,
 				customClass,
+				closeMenu,
 			}}
 		>
 			{children}

@@ -15,3 +15,11 @@ export const data = [
 	{ id: 6, image: `${profile}`, text: 'Profile', path: 'profile' },
 	{ id: 7, image: `${signOut}`, text: 'Sign Out', path: 'signout' },
 ];
+
+export const NavLinks = [
+	{ id: 1, text: 'Home', path: '/landing' },
+	{ id: 2, text: 'Agents', path: 'agents' },
+	{ id: 3, text: 'Sign In', path: 'signin' },
+	{ id: 4, text: 'Sign Up', path: 'signin' },
+	{ id: 5, text: 'Dashboard', path: '/' },
+];

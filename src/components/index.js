@@ -7,6 +7,7 @@ import MobileMenu from './MobileMenu';
 import DashboardNav from './DashboardNav';
 import SideBarLogo from './SideBarLogo';
 import DashboardIcons from './DashboardIcons';
+import MobileMenuLink from './MobileMenuLink';
 
 export {
 	NavBar,
@@ -18,4 +19,5 @@ export {
 	SideBarLogo,
 	DashboardNav,
 	DashboardIcons,
+	MobileMenuLink,
 };

@@ -3,17 +3,24 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useGlobalContext } from './context';
 import { AiOutlineClose } from 'react-icons/ai';
+import { NavLinks } from '../data';
+import MobileMenuLink from './MobileMenuLink';
 
 const MobileMenu = () => {
 	const { toggleMenu, showMenu } = useGlobalContext();
+	console.log(NavLinks);
 	return (
 		<StyledMenuWrapper>
 			<div className='mobile-menu'>
-				<Link to='/'>Home</Link>
-				<Link to='agents'>Agents</Link>
-				<Link to='signin'>Sign In</Link>
-				<Link to='signin'>Sign Up</Link>
-
+				{NavLinks &&
+					NavLinks.map(link => {
+						return (
+							<MobileMenuLink
+								key={link.id}
+								{...link}
+							/>
+						);
+					})}
 				<button
 					type='button'
 					className='close-btn'
@@ -33,15 +40,17 @@ const StyledMenuWrapper = styled.div`
 	flex-basis: 1;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 auto;
 	border-radius: 8px;
 
 	.mobile-menu {
 		display: flex;
 		flex-direction: column;
-		margin: 0 auto;
+		/* margin: 0 auto; */
 		width: 100%;
 		position: fixed;
+		align-items: center;
+		margin: 0 auto;
+
 		inset: 0;
 		height: 40vh;
 		background: olivedrab;
@@ -50,8 +59,8 @@ const StyledMenuWrapper = styled.div`
 			text-decoration: none;
 			text-transform: capitalize;
 			color: white;
-			margin: 1rem auto;
 		}
+
 		a:hover {
 			text-decoration: underline;
 			text-decoration-color: white;

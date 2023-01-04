@@ -12,7 +12,7 @@ const DashboardIcons = () => {
 				/>
 			</Link>
 			<Link
-				to='/'
+				to='/agents'
 				className='link'
 			>
 				Agents

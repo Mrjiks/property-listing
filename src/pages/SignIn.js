@@ -87,7 +87,9 @@ const SignIn = () => {
 								<div className='cta-container'>
 									<p className='cta-text'>Signed up already? </p>
 									<Link className='cta-link'>
-										<span onClick={() => setName(!checkName)}>Sign In</span>
+										<span onClick={() => setName(!checkName)}>
+											{checkName ? 'Login' : 'Sign Up'}
+										</span>
 									</Link>
 								</div>
 							</form>
@@ -158,7 +160,7 @@ const Wrapper = styled.main`
 			margin-bottom: 2rem;
 			margin-top: 2rem;
 			border: 2px solid olivedrab;
-			width: 50%;
+			width: 30%;
 			height: 30px;
 			display: flex;
 			border-radius: 20px;

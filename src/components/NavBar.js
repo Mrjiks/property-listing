@@ -6,12 +6,12 @@ import { NavLink } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const NavBar = () => {
-	const { toggleMenu, showMenu } = useGlobalContext();
+	const { toggleMenu, showMenu, closeMenu } = useGlobalContext();
 	return (
 		<StyledNavBar>
 			<div className='hide-menu'>
-				<NavLink to='/landing'>Home</NavLink>
-				<NavLink to='/'>Agents</NavLink>
+				<NavLink to='/'>Dashboard</NavLink>
+				<NavLink to='/agents'>Agents</NavLink>
 				<NavLink to='/signin'>Sign In</NavLink>
 			</div>
 			<button

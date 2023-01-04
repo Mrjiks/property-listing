@@ -15,9 +15,6 @@ function App() {
 				>
 					<Route
 						index
-						element={<Agents />}
-					/>
-					<Route
 						path='stats'
 						element={'Stats'}
 					/>
@@ -50,6 +47,10 @@ function App() {
 				<Route
 					path='/signin'
 					element={<SignIn />}
+				/>
+				<Route
+					path='agents'
+					element={<Agents />}
 				/>
 			</Routes>
 		</Router>
