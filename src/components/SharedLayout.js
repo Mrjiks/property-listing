@@ -9,12 +9,12 @@ const SharedLayout = () => {
 	return (
 		<div className='container'>
 			<NavBarWrapper />
+			{showMenu && <MobileMenu />}
 			<Wrapper>
 				<div className='sidebar'>
 					<SideBarMenu />
 				</div>
 				<div className='main-view'>
-					{showMenu && <MobileMenu />}
 					{/* <DashboardNav /> */}
 					<Outlet />
 				</div>
@@ -37,8 +37,6 @@ const Wrapper = styled.div`
 		align-items: center;
 	}
 	.sidebar {
-		/* width: 100%; */
-		/* test */
 		display: block;
 		flex-direction: column;
 		margin: 0 auto;

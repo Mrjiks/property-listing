@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 const NavBarWrapper = () => {
 	return (
 		<StyledWrapper>
-			<Link to='/landing'>
+			<Link to='/'>
 				<img
 					src='https://img.freepik.com/premium-vector/home-icon-house-symbol-simple-vector-design-logo_231786-5048.jpg?w=50'
 					alt=''
