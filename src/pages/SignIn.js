@@ -7,6 +7,25 @@ import { useGlobalContext } from '../components/context';
 const SignIn = () => {
 	const { showMenu } = useGlobalContext();
 	const [checkName, setName] = React.useState(true);
+	const [user, setUser] = React.useState({
+		name: '',
+		email: '',
+		password: '',
+	});
+
+	const handleChange = e => {
+		setUser({ ...user, [e.target.name]: e.target.value });
+	};
+	const onSubmit = e => {
+		e.preventDefault();
+		localStorage.setItem('user', JSON.stringify(user));
+		setUser({ name: '', email: '', password: '' });
+
+		// setInterval(() => {
+		// 	window.location = '/';
+		// }, 1500);
+	};
+
 	return (
 		<>
 			{showMenu && <MobileMenu />}
@@ -50,7 +69,7 @@ const SignIn = () => {
 							</button>
 						</div>
 						<div>
-							<form>
+							<form onSubmit={onSubmit}>
 								{checkName ? (
 									<label htmlFor='name'>Full Name</label>
 								) : (
@@ -62,12 +81,16 @@ const SignIn = () => {
 											type='text'
 											name='name'
 											id='name'
+											value={user.value}
 											placeholder='John Doe'
+											onChange={handleChange}
 										/>
 									)}
 									<input
 										type='email'
 										name='email'
+										value={user.value}
+										onChange={handleChange}
 										id='email'
 										placeholder='Email address'
 									/>
@@ -75,11 +98,14 @@ const SignIn = () => {
 										type='password'
 										name='password'
 										id='password'
+										value={user.value}
 										placeholder='password'
+										onChange={handleChange}
 									/>
 									<button
 										type='submit'
 										className='btn-submit'
+										onClick={onSubmit}
 									>
 										{checkName ? 'Register' : 'Login'}
 									</button>
