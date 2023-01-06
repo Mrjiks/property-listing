@@ -3,7 +3,6 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import React from 'react';
 import { useGlobalContext } from './context';
 import { NavLink } from 'react-router-dom';
-import { AiOutlineClose } from 'react-icons/ai';
 
 const NavBar = () => {
 	const { toggleMenu, showMenu, closeMenu } = useGlobalContext();

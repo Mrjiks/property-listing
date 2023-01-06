@@ -7,19 +7,21 @@ import { useGlobalContext } from './context';
 const SharedLayout = () => {
 	const { showMenu } = useGlobalContext();
 	return (
-		<div className='container'>
-			<NavBarWrapper />
-			{showMenu && <MobileMenu />}
-			<Wrapper>
-				<div className='sidebar'>
-					<SideBarMenu />
-				</div>
-				<div className='main-view'>
-					{/* <DashboardNav /> */}
-					<Outlet />
-				</div>
-			</Wrapper>
-		</div>
+		<>
+			<div className='container'>
+				<NavBarWrapper />
+				{showMenu && <MobileMenu />}
+				<Wrapper>
+					<div className='sidebar'>
+						<SideBarMenu />
+					</div>
+					<div className='main-view'>
+						{/* <DashboardNav /> */}
+						<Outlet />
+					</div>
+				</Wrapper>
+			</div>
+		</>
 	);
 };
 
