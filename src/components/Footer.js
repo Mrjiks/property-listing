@@ -49,12 +49,12 @@ export default Footer;
 const Wrapper = styled.footer`
 	display: flex;
 	flex-direction: column;
-	flex-basis: 1;
 	justify-content: space-between;
-	margin: 1rem auto;
+	margin: 0rem auto;
 	align-items: center;
 	background-color: azure;
 	height: 100%;
+	width: 100%;
 	position: static;
 	bottom: 0;
 	left: 0;
@@ -67,6 +67,7 @@ const Wrapper = styled.footer`
 		margin: 1rem auto;
 		align-items: center;
 		background-color: azure;
+		width: 100%;
 		.logo-wrapper {
 			display: flex;
 			flex-direction: row;

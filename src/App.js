@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from './components/Footer';
 import SharedLayout from './components/SharedLayout';
 import Agents from './pages/Agents';
 import Landing from './pages/Landing';
 import SignIn from './pages/SignIn';
+import Signup from './pages/Signup';
 
 // prettier-ignore
 function App() {
   return (
-    <>
+    
       <Router>
         <Routes>
           <Route path="dashboard" element={<SharedLayout />}>
@@ -22,12 +22,13 @@ function App() {
           <Route path="/" element={<Landing />} />
           
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="agents" element={<Agents />} />
         </Routes>
-			<Footer />
+			
       </Router>
 
-    </>
+    
   );
 }
 

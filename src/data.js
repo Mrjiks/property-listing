@@ -20,7 +20,7 @@ export const NavLinks = [
 	{ id: 1, text: 'Home', path: '/' },
 	{ id: 2, text: 'Agents', path: '/agents' },
 	{ id: 3, text: 'Sign In', path: '/signin' },
-	{ id: 4, text: 'Sign Up', path: '/signin' },
+	{ id: 4, text: 'Sign Up', path: '/signup' },
 	{ id: 5, text: 'Dashboard', path: '/dashboard' },
 	{ id: 6, text: 'Bookings', path: '#' },
 	{ id: 7, text: 'VIPs', path: '#' },

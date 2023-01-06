@@ -5,7 +5,7 @@ import { MobileMenu, NavBarWrapper } from '../components';
 import { useGlobalContext } from '../components/context';
 import Footer from '../components/Footer';
 
-const SignIn = () => {
+const Signup = () => {
 	const { showMenu } = useGlobalContext();
 	const [checkName, setName] = React.useState(true);
 	const [user, setUser] = React.useState({
@@ -71,8 +71,23 @@ const SignIn = () => {
 						</div>
 						<div>
 							<form onSubmit={onSubmit}>
-								{checkName && <label htmlFor='signin'>Login</label>}
+								{checkName ? (
+									<label htmlFor='name'>Full Name</label>
+								) : (
+									<label htmlFor='signin'>Login</label>
+								)}
 								<div className='form-container'>
+									{checkName && (
+										<input
+											type='text'
+											name='name'
+											id='name'
+											value={user.value}
+											placeholder='John Doe'
+											onChange={handleChange}
+											required='true'
+										/>
+									)}
 									<input
 										type='email'
 										name='email'
@@ -96,22 +111,22 @@ const SignIn = () => {
 										className='btn-submit'
 										onClick={onSubmit}
 									>
-										{checkName ? 'Login' : 'Sign Up'}
+										{checkName ? 'Sign Up' : 'Login'}
 									</button>
 								</div>
 								<div className='cta-container'>
 									<p className='cta-text'>
 										{checkName ? (
-											<small>No Account yet?</small>
+											<small>Have an account already?</small>
 										) : (
 											<small>Sign in</small>
 										)}{' '}
 									</p>
 									<span>
 										{checkName ? (
-											<Link to='/signup'>Sign Up</Link>
+											<Link to='/signin'>Signin</Link>
 										) : (
-											<Link to='/signup'>Sign in</Link>
+											<Link to='/signup'>Sign Up</Link>
 										)}
 									</span>
 								</div>
@@ -125,7 +140,7 @@ const SignIn = () => {
 	);
 };
 
-export default SignIn;
+export default Signup;
 
 const Wrapper = styled.main`
 	display: flex;

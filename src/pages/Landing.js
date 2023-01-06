@@ -35,6 +35,7 @@ function Landing() {
 				className='progress-bar'
 				style={{ scaleX }}
 			/>
+			<Footer />
 		</Wrapper>
 	);
 }
@@ -43,6 +44,7 @@ export default Landing;
 
 const Wrapper = styled.div`
 	display: flex;
+	flex-basis: 1;
 	flex-direction: column;
 	.progress-bar {
 		position: fixed;
