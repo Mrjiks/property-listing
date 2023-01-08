@@ -13,7 +13,7 @@ const SingleFeatured = () => {
 					<p className='property-location'>Rental unit in Lagos</p>
 					<p>2-bedroom rental unit in Maryland, Lagos City</p>
 					<div className='price-info'>
-						<p>N800,000</p>
+						<p className='price'>N800,000</p>
 						<p className='tag'>New</p>
 					</div>
 				</div>
@@ -26,12 +26,13 @@ export default SingleFeatured;
 
 const Wrapper = styled.div`
 	display: flex;
+	cursor: pointer;
 	img {
 		width: 100%;
-		border-radius: 8px;
 		margin-bottom: 0.5rem;
 	}
 	.featured-details {
+		border-radius: 8px;
 		padding: 1rem;
 		background: olivedrab;
 		color: white;
@@ -40,9 +41,30 @@ const Wrapper = styled.div`
 	.featured-details:hover {
 		background: white;
 		color: olivedrab;
-		cursor: pointer;
 	}
-
+	.featured-details {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0rem auto;
+	}
+	.price-info {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 10px;
+		.price {
+			background-color: orangered;
+			padding: 0.2rem;
+		}
+	}
+	.tag {
+		color: orangered;
+		background-color: oldlace;
+		border-radius: 4px;
+		padding: 0.2rem;
+	}
 	@media (min-width: 768px) {
 		.wrapper {
 			display: flex;

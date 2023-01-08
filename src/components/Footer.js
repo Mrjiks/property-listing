@@ -8,11 +8,12 @@ const Footer = () => {
 	return (
 		<Wrapper>
 			<div className='container'>
-				<div className='social-media'>
+				<Link className='social-media'>
 					<FaFacebookF className='social-link' />
 					<BsTwitter className='social-link' />
 					<BsInstagram className='social-link' />
-				</div>
+				</Link>
+
 				<p>Phone Support:414.890.9878</p>
 				<small>Mon -Fri 9AM - 5PM GMT</small>
 				<div className='links'>

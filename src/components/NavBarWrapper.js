@@ -25,6 +25,7 @@ const StyledWrapper = styled.div`
 	align-items: center;
 	margin-bottom: 1rem;
 	background-color: olivedrab;
+
 	img {
 		display: block;
 		max-width: 100%;
