@@ -1,29 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { FaFacebookF } from 'react-icons/fa';
+import { BsTwitter, BsInstagram } from 'react-icons/bs';
 
 const Footer = () => {
 	return (
 		<Wrapper>
 			<div className='container'>
+				<div className='social-media'>
+					<FaFacebookF className='social-link' />
+					<BsTwitter className='social-link' />
+					<BsInstagram className='social-link' />
+				</div>
+				<p>Phone Support:414.890.9878</p>
+				<small>Mon -Fri 9AM - 5PM GMT</small>
 				<div className='links'>
 					<Link
 						to='#'
 						className='link'
 					>
-						Company
+						Contact Us
 					</Link>
 					<Link
 						to='#'
 						className='link'
 					>
-						Agents
+						Privacy
 					</Link>
 					<Link
 						to='#'
 						className='link'
 					>
-						List Today
+						Terms and Conditions
 					</Link>
 				</div>
 				<div className='logo-wrapper'>
@@ -35,7 +44,7 @@ const Footer = () => {
 					</Link>
 					<div>
 						<address>
-							<span>Jiks@copyright</span> {new Date().getFullYear()}
+							<span>Jiks &copy; copyright</span> {new Date().getFullYear()}
 						</address>
 					</div>
 				</div>
@@ -59,15 +68,28 @@ const Wrapper = styled.footer`
 	bottom: 0;
 	left: 0;
 	right: 0;
+	text-align: center;
 
 	.container {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		margin: 1rem auto;
+		margin: 0 auto;
+		padding: 2rem;
 		align-items: center;
-		background-color: azure;
+		background-color: olivedrab;
 		width: 100%;
+		.social-media {
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 2rem;
+			font-size: 2rem;
+
+			.social-link {
+				margin: 0.5rem;
+				color: white;
+			}
+		}
 		.logo-wrapper {
 			display: flex;
 			flex-direction: row;
@@ -81,6 +103,10 @@ const Wrapper = styled.footer`
 				}
 			}
 		}
+		p,
+		small {
+			color: white;
+		}
 	}
 	.links {
 		display: flex;
@@ -88,7 +114,8 @@ const Wrapper = styled.footer`
 		justify-content: space-between;
 		.link {
 			margin: 0.4rem;
-			text-decoration: none;
+			text-decoration: underline;
+			text-decoration-color: black;
 		}
 		&.link:hover {
 			cursor: pointer;
