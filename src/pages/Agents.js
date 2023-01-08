@@ -18,7 +18,7 @@ const Agents = () => {
 		<Wrapper>
 			{showMenu && <MobileMenu />}
 			<NavBarWrapper />
-			<div>
+			<div className='container'>
 				<h1>Welcome to Agent page</h1>
 				<motion.div
 					className='progress-bar'
@@ -33,13 +33,14 @@ const Agents = () => {
 
 export default Agents;
 const Wrapper = styled.div`
-	display:flex .progress-bar {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 10px;
-		background: var(--red);
-		transform-origin: 0%;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 1;
+	.container {
+		margin: 0 auto;
+		width: 90%;
+		p {
+			padding: 1rem;
+		}
 	}
 `;

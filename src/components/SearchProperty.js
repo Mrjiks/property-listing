@@ -38,7 +38,7 @@ const StyledSearchWrapper = styled.main`
 		display: flex;
 		justify-content: space-around;
 		margin: 10px auto;
-		width: 100%;
+		width: 90%;
 		height: 40px;
 		background-color: white;
 
@@ -59,7 +59,7 @@ const StyledSearchWrapper = styled.main`
 		border: 1px solid olivedrab;
 		border-radius: 8px;
 		height: 45px;
-		width: 100%;
+		width: 90%;
 		margin: 0 auto;
 
 		margin-bottom: 10px;
