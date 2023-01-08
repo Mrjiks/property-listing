@@ -133,6 +133,7 @@ const Wrapper = styled.main`
 	margin: 0 auto;
 	justify-content: space-between;
 	flex-direction: column;
+	height: 100vh;
 
 	.ulo-pitch-container {
 		display: flex;
@@ -255,7 +256,6 @@ const Wrapper = styled.main`
 			width: 100%;
 			justify-content: space-between;
 			align-items: center;
-			background-color: #f0fcfa;
 			border-radius: 8px;
 			margin-bottom: 20px;
 		}

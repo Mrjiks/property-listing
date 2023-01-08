@@ -60,14 +60,10 @@ const Wrapper = styled.footer`
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0rem auto;
+	margin-top: 10rem;
 	align-items: center;
-	background-color: azure;
-	height: 100%;
+	background-color: olivedrab;
 	width: 100%;
-	position: static;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	text-align: center;
 
 	.container {
@@ -133,25 +129,24 @@ const Wrapper = styled.footer`
 	@media (min-width: 768px) {
 		.container {
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: space-between;
 			margin-top: 50px;
 			align-items: center;
-			background-color: azure;
+			background-color: olivedrab;
 		}
+
 		.links {
-			order: 1;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
-			margin-left: 10rem;
 		}
 		.logo-wrapper {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-
+			margin-top: 1rem;
 			address {
 				margin-left: 0.5rem;
 				span {

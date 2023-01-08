@@ -24,11 +24,6 @@ const Agents = () => {
 					className='progress-bar'
 					style={{ scaleX }}
 				/>
-				<h1>
-					<code>useScroll</code> with spring smoothing
-				</h1>
-				<LoremIpsum />
-				<LoremIpsum />
 				<LoremIpsum />
 			</div>
 			<Footer />
