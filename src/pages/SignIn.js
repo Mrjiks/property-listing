@@ -22,7 +22,7 @@ const SignIn = () => {
 		localStorage.setItem('user', JSON.stringify(user));
 
 		setInterval(() => {
-			window.location = '/signin';
+			window.location = '/dashboard';
 		}, 1500);
 		// setUser({});
 	};
@@ -94,9 +94,11 @@ const SignIn = () => {
 									<button
 										type='submit'
 										className='btn-submit'
-										onClick={onSubmit}
 									>
-										{checkName ? 'Login' : 'Sign Up'}
+										<Link to='/dashboard'>
+											{' '}
+											{checkName ? 'Login' : 'Sign Up'}
+										</Link>
 									</button>
 								</div>
 								<div className='cta-container'>

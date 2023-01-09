@@ -4,7 +4,11 @@ import { useGlobalContext } from './context';
 import { AiOutlineClose } from 'react-icons/ai';
 import { NavLinks } from '../data';
 import MobileMenuLink from './MobileMenuLink';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+
+// const backdrop = {
+// 	hidden: { opacity: 0 },
+// };
 
 const MobileMenu = () => {
 	const { toggleMenu, showMenu } = useGlobalContext();
@@ -13,9 +17,9 @@ const MobileMenu = () => {
 		<StyledMenuWrapper>
 			<motion.div
 				className='mobile-menu'
-				initial={{ opacity: 0, scale: 0.5 }}
-				animate={{ opacity: 1, scale: 1 }}
-				transition={{ duration: 0.5 }}
+				initial={{ opacity: 1, y: -300 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.9 }}
 			>
 				{NavLinks &&
 					NavLinks.map(link => {
@@ -26,7 +30,6 @@ const MobileMenu = () => {
 							/>
 						);
 					})}
-
 				<button
 					type='button'
 					onClick={() => toggleMenu()}
@@ -51,14 +54,12 @@ const StyledMenuWrapper = styled.div`
 	.mobile-menu {
 		display: flex;
 		flex-direction: column;
-		/* margin: 0 auto; */
 		width: 100%;
 		position: fixed;
-		align-items: center;
+		align-items: left;
 		margin: 0 auto;
-
 		inset: 0;
-		height: 65%;
+		height: 60%;
 		background: olivedrab;
 		z-index: 11;
 		a {
@@ -72,7 +73,6 @@ const StyledMenuWrapper = styled.div`
 			text-decoration-color: white;
 		}
 		.close-btn {
-			/* display: block; */
 			width: 20%;
 			height: 35px;
 			border-radius: 8px;

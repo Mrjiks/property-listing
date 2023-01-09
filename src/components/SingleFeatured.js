@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const SingleFeatured = () => {
 	return (
@@ -13,7 +14,16 @@ const SingleFeatured = () => {
 					<p className='property-location'>Rental unit in Lagos</p>
 					<p>2-bedroom rental unit in Maryland, Lagos City</p>
 					<div className='price-info'>
-						<p className='price'>N800,000</p>
+						<motion.p
+							className='price'
+							whileHover={{
+								scale: 1.1,
+								textShadow: '0px 0px 8px rgb(255,255,255)',
+								boxShadow: '0px 0px 8px rgb(255,255,255)',
+							}}
+						>
+							N800,000
+						</motion.p>
 						<p className='tag'>New</p>
 					</div>
 				</div>
@@ -57,6 +67,7 @@ const Wrapper = styled.div`
 		.price {
 			background-color: orangered;
 			padding: 0.2rem;
+			border-radius: 10px;
 		}
 	}
 	.tag {
