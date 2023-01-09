@@ -59,7 +59,7 @@ const StyledMenuWrapper = styled.div`
 		align-items: left;
 		margin: 0 auto;
 		inset: 0;
-		height: 60%;
+		height: 65%;
 		background: olivedrab;
 		z-index: 11;
 		a {
