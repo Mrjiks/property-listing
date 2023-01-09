@@ -2,17 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-const SingleFeatured = () => {
+const SingleFeatured = ({ title, imageUrl, price, address, tag }) => {
 	return (
 		<Wrapper className='wrapper'>
 			<div className='featured-house'>
 				<img
-					src='https://i.pinimg.com/originals/c7/58/43/c7584365f991ea6236fd1f19653f06a2.jpg'
-					alt='house'
+					src={imageUrl}
+					alt={title}
 				/>
 				<div className='featured-details'>
-					<p className='property-location'>Rental unit in Lagos</p>
-					<p>2-bedroom rental unit in Maryland, Lagos City</p>
+					<p className='property-location'>{address}</p>
+					<p>{title}</p>
 					<div className='price-info'>
 						<motion.p
 							className='price'
@@ -22,9 +22,9 @@ const SingleFeatured = () => {
 								boxShadow: '0px 0px 8px rgb(255,255,255)',
 							}}
 						>
-							N800,000
+							N{price}
 						</motion.p>
-						<p className='tag'>New</p>
+						<p className='tag'>{tag}</p>
 					</div>
 				</div>
 			</div>

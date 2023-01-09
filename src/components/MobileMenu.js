@@ -6,38 +6,42 @@ import { NavLinks } from '../data';
 import MobileMenuLink from './MobileMenuLink';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// const backdrop = {
-// 	hidden: { opacity: 0 },
-// };
+const showNav = {
+	key: 'mobile-menu',
+	initial: { opacity: 1, y: '-100%' },
+	animate: { opacity: 1, y: 0 },
+	transition: { duration: 0.8 },
+	exit: { opacity: 0, y: '100%', transition: { duration: 0.9 } },
+};
 
 const MobileMenu = () => {
 	const { toggleMenu, showMenu } = useGlobalContext();
 
 	return (
 		<StyledMenuWrapper>
-			<motion.div
-				className='mobile-menu'
-				initial={{ opacity: 1, y: -300 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.9 }}
-			>
-				{NavLinks &&
-					NavLinks.map(link => {
-						return (
-							<MobileMenuLink
-								key={link.id}
-								{...link}
-							/>
-						);
-					})}
-				<button
-					type='button'
-					onClick={() => toggleMenu()}
-					className='close-btn'
+			<AnimatePresence>
+				<motion.div
+					className='mobile-menu'
+					{...showNav}
 				>
-					<AiOutlineClose />
-				</button>
-			</motion.div>
+					{NavLinks &&
+						NavLinks.map(link => {
+							return (
+								<MobileMenuLink
+									key={link.id}
+									{...link}
+								/>
+							);
+						})}
+					<button
+						type='button'
+						onClick={() => toggleMenu()}
+						className='close-btn'
+					>
+						<AiOutlineClose />
+					</button>
+				</motion.div>
+			</AnimatePresence>
 		</StyledMenuWrapper>
 	);
 };

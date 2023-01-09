@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import SingleFeatured from './SingleFeatured';
+import { featuredHouse } from '../data';
 
 const FeaturedProperty = () => {
 	return (
@@ -11,12 +12,14 @@ const FeaturedProperty = () => {
 				</p>
 			</div>
 			<div className='featured-container'>
-				<SingleFeatured className='house-card' />
-				<SingleFeatured className='house-card' />
-				<SingleFeatured className='house-card' />
-				<SingleFeatured className='house-card' />
-				<SingleFeatured className='house-card' />
-				<SingleFeatured className='house-card' />
+				{featuredHouse.map(house => {
+					return (
+						<SingleFeatured
+							key={house.id}
+							{...house}
+						/>
+					);
+				})}
 			</div>
 		</StyledFeaturedWrapper>
 	);
