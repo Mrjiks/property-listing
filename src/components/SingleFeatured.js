@@ -51,6 +51,7 @@ const Wrapper = styled.div`
 	.featured-details:hover {
 		background: white;
 		color: olivedrab;
+		transform: scale(1);
 	}
 	.featured-details {
 		display: flex;
@@ -87,6 +88,7 @@ const Wrapper = styled.div`
 			.featured-house:hover {
 				background: olivedrab;
 				color: white;
+				transform: scale(1);
 			}
 		}
 	}
