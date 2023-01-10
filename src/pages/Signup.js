@@ -153,7 +153,9 @@ const Wrapper = styled.main`
 	.ulo-pitch-container {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
+
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 2rem;
@@ -190,6 +192,7 @@ const Wrapper = styled.main`
 	.form-wrapper {
 		display: flex;
 		width: 100%;
+		margin: 0 auto;
 		justify-content: space-between;
 		align-items: center;
 		background-color: #f0fcfa;
@@ -200,7 +203,7 @@ const Wrapper = styled.main`
 			margin-bottom: 2rem;
 			margin-top: 2rem;
 			border: 2px solid olivedrab;
-			width: 30%;
+			width: 40%;
 			height: 30px;
 			display: flex;
 			border-radius: 20px;

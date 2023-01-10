@@ -140,9 +140,11 @@ const Wrapper = styled.main`
 	.ulo-pitch-container {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		width: 90%;
 		justify-content: space-between;
 		align-items: center;
+		margin: 0 auto;
+
 		margin-bottom: 2rem;
 
 		.ulo-detail-pitch {
@@ -159,7 +161,9 @@ const Wrapper = styled.main`
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			width: 100%;
+			width: 90%;
+			margin: 0 auto;
+
 			background-color: #f0fcfa;
 			border-radius: 8px;
 			opacity: 0.9;
@@ -176,18 +180,19 @@ const Wrapper = styled.main`
 	/* Form CSS */
 	.form-wrapper {
 		display: flex;
-		width: 100%;
+		width: 90%;
 		justify-content: space-between;
 		align-items: center;
 		background-color: #f0fcfa;
 		flex-direction: column;
 		border-radius: 8px;
+		margin: 0 auto;
 
 		.user-btn {
 			margin-bottom: 2rem;
 			margin-top: 2rem;
 			border: 2px solid olivedrab;
-			width: 30%;
+			width: 50%;
 			height: 30px;
 			display: flex;
 			border-radius: 20px;

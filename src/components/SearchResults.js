@@ -35,7 +35,7 @@ const SearchResults = () => {
 					<option value='Land'>Land</option>
 					<option value='Halls'>Halls</option>
 				</select>
-				<Link to='/siginin'>Sign in</Link>
+				<Link to='/signin'>Sign in</Link>
 			</div>
 			<div className='search-details'>
 				<h2>Rental Listings</h2>
