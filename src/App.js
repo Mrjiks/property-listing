@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { FeaturedProperty } from './components';
+import SearchResults from './components/SearchResults';
 import SharedLayout from './components/SharedLayout';
 import Agents from './pages/Agents';
 import Landing from './pages/Landing';
@@ -24,6 +26,7 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="agents" element={<Agents />} />
+          <Route path="/search" element={<SearchResults />} />
         </Routes>
 			
       </Router>

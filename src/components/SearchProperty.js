@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { BsSearch } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+
 const SearchProperty = () => {
 	return (
 		<StyledSearchWrapper>
@@ -20,7 +22,9 @@ const SearchProperty = () => {
 						type='submit'
 						className='submit-btn'
 					>
-						<BsSearch className='search-icon' />
+						<Link to='/search'>
+							<BsSearch className='search-icon' />
+						</Link>
 					</button>
 				</div>
 			</form>

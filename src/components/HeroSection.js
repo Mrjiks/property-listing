@@ -4,7 +4,7 @@ import { MdOutlineLocationOn } from 'react-icons/md';
 
 const HeroSection = () => {
 	return (
-		<StyledHeroWrapper>
+		<Wrapper>
 			<div className='wrapper'>
 				<div className='container'>
 					<h1 className='hero-text'>Find the apartment of your dreams.</h1>
@@ -31,23 +31,24 @@ const HeroSection = () => {
 							type='button'
 							className='location-btn'
 						>
-							Property location
+							Property locations
 						</p>
 					</div>
 				</div>
+				{/* Animate this image to background slide show */}
 				<img
 					className='hero-img'
 					src='http://cdn.home-designing.com/wp-content/uploads/2017/05/wood-white-and-charcoal-modern-exterior-paint-themes.jpg'
 					alt='house'
 				/>
 			</div>
-		</StyledHeroWrapper>
+		</Wrapper>
 	);
 };
 
 export default HeroSection;
 
-const StyledHeroWrapper = styled.main`
+const Wrapper = styled.main`
 	display: flex;
 	flex-direction: column;
 	flex-basis: 1;
