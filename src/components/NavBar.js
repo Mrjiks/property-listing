@@ -70,4 +70,12 @@ const StyledNavBar = styled.nav`
 			display: none;
 		}
 	}
+	@media (orientation: landscape) {
+		.hide-menu {
+			display: flex;
+		}
+		.mobile-menu {
+			display: none;
+		}
+	}
 `;

@@ -94,4 +94,24 @@ const StyledMenuWrapper = styled.div`
 			}
 		}
 	}
+	@media (orientation: landscape) {
+		.hide-menu {
+			display: flex;
+		}
+		.mobile-menu {
+			display: none;
+		}
+		.mobile-menu {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			position: fixed;
+			align-items: left;
+			margin: 0 auto;
+			inset: 0;
+			height: 100%;
+			background: olivedrab;
+			z-index: 11;
+		}
+	}
 `;

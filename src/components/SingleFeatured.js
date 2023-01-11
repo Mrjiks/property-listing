@@ -77,6 +77,21 @@ const Wrapper = styled.div`
 		border-radius: 4px;
 		padding: 0.2rem;
 	}
+	@media (orientation: landscape) {
+		.wrapper {
+			display: flex;
+			img {
+				width: 100%;
+				border-radius: 8px;
+				margin-bottom: 1rem;
+			}
+			.featured-house:hover {
+				background: olivedrab;
+				color: white;
+				transform: scale(1);
+			}
+		}
+	}
 	@media (min-width: 768px) {
 		.wrapper {
 			display: flex;
