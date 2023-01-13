@@ -22,7 +22,7 @@ const Signup = () => {
 	const onSubmit = e => {
 		e.preventDefault();
 		localStorage.setItem('user', JSON.stringify(user));
-		toast.success('Logged in signed up');
+		toast.success('Logged in signed up', { draggable: true, progress: 3 });
 		setInterval(() => {
 			window.location = '/signin';
 		}, 2000);
@@ -33,7 +33,7 @@ const Signup = () => {
 			<ToastContainer
 				position='top-center'
 				autoClose={5000}
-				theme='light'
+				theme='dark'
 			/>
 			{showMenu && <MobileMenu />}
 			<NavBarWrapper />

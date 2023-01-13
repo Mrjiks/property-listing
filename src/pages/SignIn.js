@@ -23,7 +23,7 @@ const SignIn = () => {
 		e.preventDefault();
 		const newUser = JSON.parse(localStorage.getItem('user'));
 		if (user.email === newUser.email && user.password === newUser.password) {
-			toast.success('Logged in successfully');
+			toast.success('Logged in successfully', { draggable: true, progress: 2 });
 			setInterval(() => {
 				window.location = '/dashboard';
 			}, 3000);
@@ -33,6 +33,11 @@ const SignIn = () => {
 	};
 	return (
 		<>
+			<ToastContainer
+				position='top-center'
+				autoClose={5000}
+				theme='dark'
+			/>
 			{showMenu && <MobileMenu />}
 			<NavBarWrapper />
 			<Wrapper>
@@ -42,8 +47,8 @@ const SignIn = () => {
 							List your property online in minutes!
 						</h1>
 						<p className='ulo-detail-pitch'>
-							<span>Ulo</span> provides enough value to ensure that our users
-							are the <span>most serious</span> property-hunters.
+							<span>Dream Homes</span> provides enough value to ensure that our
+							users are the <span>most serious</span> property-hunters.
 						</p>
 						<div className='ulo-ads-container'>
 							<img
@@ -52,8 +57,8 @@ const SignIn = () => {
 							/>
 
 							<p className='ulo-ads'>
-								Join several other users using <span>Ulo</span> to find and
-								provide shelters
+								Join several other users using <span>Dream Homes</span> to find
+								and provide shelters
 							</p>
 						</div>
 					</div>
@@ -94,11 +99,6 @@ const SignIn = () => {
 										placeholder='password'
 										onChange={handleChange}
 										required
-									/>
-									<ToastContainer
-										position='top-center'
-										autoClose={5000}
-										theme='light'
 									/>
 
 									<button
