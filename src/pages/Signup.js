@@ -62,7 +62,7 @@ const Signup = () => {
 
 					<div className='form-wrapper'>
 						<div className='user-btn'>
-							A step away from owning It
+							{/* A step away from owning It */}
 							{/* <button
 								type='button'
 								className='btn-1'
