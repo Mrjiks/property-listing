@@ -61,21 +61,6 @@ const Signup = () => {
 					</div>
 
 					<div className='form-wrapper'>
-						<div className='user-btn'>
-							{/* A step away from owning It */}
-							{/* <button
-								type='button'
-								className='btn-1'
-							>
-								Dream
-							</button>
-							<button
-								type='button'
-								className='btn-2'
-							>
-								Home
-							</button> */}
-						</div>
 						<div>
 							<form onSubmit={onSubmit}>
 								{checkName ? (
