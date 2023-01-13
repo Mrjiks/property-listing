@@ -6,8 +6,7 @@ import { useGlobalContext } from '../components/context';
 import Footer from '../components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Auth0Button from '../components/Auth0Button';
-import LogoutButton from '../components/LogoutButton';
+import SocialLogin from '../components/SocialLogin';
 
 const SignIn = () => {
 	const { showMenu } = useGlobalContext();
@@ -67,18 +66,19 @@ const SignIn = () => {
 
 					<div className='form-wrapper'>
 						<div className='user-btn'>
-							<button
+							A step away from owning It
+							{/* <button
 								type='button'
 								className='btn-1'
 							>
-								User
+								Dream
 							</button>
 							<button
 								type='button'
 								className='btn-2'
 							>
-								Agent
-							</button>
+								Home
+							</button> */}
 						</div>
 						<div>
 							<form onSubmit={onSubmit}>
@@ -109,6 +109,7 @@ const SignIn = () => {
 									>
 										{checkName ? 'Sign up' : 'Login'}
 									</button>
+									<SocialLogin />
 								</div>
 								<div className='cta-container'>
 									<p className='cta-text'>
@@ -127,11 +128,6 @@ const SignIn = () => {
 									</span>
 								</div>
 							</form>
-							<div>
-								<h4>OR sign in with:</h4>
-								<Auth0Button />
-								<LogoutButton />
-							</div>
 						</div>
 					</div>
 				</div>
@@ -194,7 +190,7 @@ const Wrapper = styled.main`
 	/* Form CSS */
 	.form-wrapper {
 		display: flex;
-		width: 90%;
+		width: 100%;
 		justify-content: space-between;
 		align-items: center;
 		background-color: #f0fcfa;
@@ -203,10 +199,10 @@ const Wrapper = styled.main`
 		margin: 0 auto;
 
 		.user-btn {
-			margin-bottom: 2rem;
+			margin-bottom: 1rem;
 			margin-top: 2rem;
 			border: 2px solid olivedrab;
-			width: 50%;
+			width: 40%;
 			height: 30px;
 			display: flex;
 			border-radius: 20px;
@@ -239,7 +235,7 @@ const Wrapper = styled.main`
 
 			input {
 				margin: 15px;
-				width: 100%;
+				width: 200px;
 				height: 30px;
 				border-radius: 8px;
 				border: 1px solid gray;
@@ -249,7 +245,7 @@ const Wrapper = styled.main`
 			}
 			.btn-submit {
 				margin: 10px;
-				width: 100%;
+				width: 200px;
 				height: 30px;
 				border-radius: 4px;
 				color: white;

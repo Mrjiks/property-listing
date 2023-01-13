@@ -62,18 +62,19 @@ const Signup = () => {
 
 					<div className='form-wrapper'>
 						<div className='user-btn'>
-							<button
+							A step away from owning It
+							{/* <button
 								type='button'
 								className='btn-1'
 							>
-								User
+								Dream
 							</button>
 							<button
 								type='button'
 								className='btn-2'
 							>
-								Agent
-							</button>
+								Home
+							</button> */}
 						</div>
 						<div>
 							<form onSubmit={onSubmit}>
@@ -155,7 +156,6 @@ const Wrapper = styled.main`
 	justify-content: space-between;
 	flex-direction: column;
 	height: 100vh;
-	border: 1px solid red;
 
 	.ulo-pitch-container {
 		display: flex;
@@ -281,7 +281,7 @@ const Wrapper = styled.main`
 			width: 100%;
 			justify-content: space-between;
 			align-items: center;
-			background-color: #f0fcfa;
+			background-color: olivedrab;
 			border-radius: 8px;
 			margin-bottom: 20px;
 		}

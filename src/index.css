@@ -40,6 +40,21 @@ button {
 button:hover {
 	opacity: 0.7;
 }
+.myButton {
+	background-color: rgb(205, 107, 57);
+	border-radius: 8px;
+	border: 1px solid #4b8f29;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: inherit;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px 18px;
+	text-decoration: none;
+	margin-top: 1.3rem;
+	width: 200px;
+}
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -49,11 +64,6 @@ body {
 	margin: 0 auto;
 	height: 100%;
 	/* background-color: #931243; */
-}
-@media (min-width: 768px) {
-	body {
-		/* width: 90%; */
-	}
 }
 
 @keyframes load-spinner {

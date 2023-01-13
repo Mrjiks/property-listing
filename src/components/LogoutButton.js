@@ -3,7 +3,16 @@ import React from 'react';
 
 const LogoutButton = () => {
 	const { logout, isAuthenticated } = useAuth0();
-	return isAuthenticated && <button onClick={() => logout()}>Logout</button>;
+	return (
+		isAuthenticated && (
+			<button
+				onClick={() => logout()}
+				className='myButton'
+			>
+				Logout
+			</button>
+		)
+	);
 };
 
 export default LogoutButton;
