@@ -177,5 +177,10 @@ const Wrapper = styled.main`
 		.hero-img {
 			width: 55%;
 		}
+		@media (orientation: landscape) {
+			.wrapper {
+				width: 100%;
+			}
+		}
 	}
 `;

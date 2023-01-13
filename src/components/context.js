@@ -18,7 +18,6 @@ const AppProvider = ({ children }) => {
 		}
 		addClass();
 	};
-
 	return (
 		<AppContext.Provider
 			value={{

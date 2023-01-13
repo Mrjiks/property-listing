@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const Signup = () => {
 	const { showMenu } = useGlobalContext();
-	const [checkName, setName] = React.useState(true);
+	const [checkName] = React.useState(true);
 	const [user, setUser] = React.useState({
 		name: '',
 		email: '',
@@ -20,11 +20,6 @@ const Signup = () => {
 	const onSubmit = e => {
 		e.preventDefault();
 		localStorage.setItem('user', JSON.stringify(user));
-
-		setInterval(() => {
-			window.location = '/signin';
-		}, 1500);
-		// setUser({});
 	};
 
 	return (
@@ -85,7 +80,7 @@ const Signup = () => {
 											value={user.value}
 											placeholder='John Doe'
 											onChange={handleChange}
-											required='true'
+											required
 										/>
 									)}
 									<input
@@ -95,7 +90,7 @@ const Signup = () => {
 										onChange={handleChange}
 										id='email'
 										placeholder='Email address'
-										required='true'
+										required
 									/>
 									<input
 										type='password'
@@ -104,7 +99,7 @@ const Signup = () => {
 										value={user.value}
 										placeholder='password'
 										onChange={handleChange}
-										required='true'
+										required
 									/>
 									<button
 										type='submit'

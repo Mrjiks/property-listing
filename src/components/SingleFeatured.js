@@ -38,33 +38,35 @@ const Wrapper = styled.div`
 	display: flex;
 	cursor: pointer;
 	img {
-		width: 100%;
+		max-width: 100%;
 		margin-bottom: 0.5rem;
+	}
+	.featured-house {
+		width: 300px;
+		height: auto;
+		margin: 0 auto;
 	}
 	.featured-details {
 		border-radius: 8px;
-		padding: 1rem;
+		height: auto;
 		background: olivedrab;
 		color: white;
 		transition: all 1s linear;
+		padding: 0.5rem;
 	}
 	.featured-details:hover {
 		background: white;
 		color: olivedrab;
-		transform: scale(1);
+		transform: scale(1, 1.2);
 	}
-	.featured-details {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		margin: 0rem auto;
-	}
+
 	.price-info {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
 		margin: 0 auto;
 		margin-top: 10px;
+		padding: 0.5rem;
 		.price {
 			background-color: orangered;
 			padding: 0.2rem;
@@ -81,9 +83,10 @@ const Wrapper = styled.div`
 		.wrapper {
 			display: flex;
 			img {
-				width: 100%;
+				max-width: 100%;
 				border-radius: 8px;
 				margin-bottom: 1rem;
+				object-fit: cover;
 			}
 			.featured-house:hover {
 				background: olivedrab;
@@ -92,11 +95,24 @@ const Wrapper = styled.div`
 			}
 		}
 	}
+	/* @media (min-width: 425px) {
+		.featured-house {
+			width: auto;
+			height: auto;
+			margin: 0 auto;
+		}
+	} */
 	@media (min-width: 768px) {
 		.wrapper {
 			display: flex;
+			/* .featured-house {
+				width: 100px;
+				height: auto;
+				margin: 0 auto;
+			} */
+
 			img {
-				width: 100%;
+				max-width: 100%;
 				border-radius: 8px;
 				margin-bottom: 1rem;
 			}

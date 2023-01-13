@@ -173,4 +173,10 @@ const Wrapper = styled.div`
 		margin: 2rem;
 		margin-left: 3rem;
 	}
+	@media (orientation: landscape) {
+		.search-filter {
+			margin-bottom: -2rem;
+			margin-left: 3rem;
+		}
+	}
 `;

@@ -4,10 +4,12 @@ import styled from 'styled-components';
 import { MobileMenu, NavBarWrapper } from '../components';
 import { useGlobalContext } from '../components/context';
 import Footer from '../components/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignIn = () => {
 	const { showMenu } = useGlobalContext();
-	const [checkName, setName] = React.useState(true);
+	const [checkName, setName] = React.useState(false);
 	const [user, setUser] = React.useState({
 		name: '',
 		email: '',
@@ -15,18 +17,20 @@ const SignIn = () => {
 	});
 
 	const handleChange = e => {
+		console.log(user.name);
 		setUser({ ...user, [e.target.name]: e.target.value });
 	};
 	const onSubmit = e => {
 		e.preventDefault();
-		localStorage.setItem('user', JSON.stringify(user));
-
-		setInterval(() => {
+		const newUser = JSON.parse(localStorage.getItem('user'));
+		if (user.email === newUser.email && user.password === newUser.password) {
+			// redirect
 			window.location = '/dashboard';
-		}, 1500);
-		// setUser({});
+			toast.success('Logged in successfully');
+		} else {
+			toast.error('Please fill all fields');
+		}
 	};
-
 	return (
 		<>
 			{showMenu && <MobileMenu />}
@@ -80,7 +84,7 @@ const SignIn = () => {
 										onChange={handleChange}
 										id='email'
 										placeholder='Email address'
-										required='true'
+										required
 									/>
 									<input
 										type='password'
@@ -89,21 +93,28 @@ const SignIn = () => {
 										value={user.value}
 										placeholder='password'
 										onChange={handleChange}
-										required='true'
+										required
 									/>
+									<ToastContainer
+										position='top-center'
+										autoClose={5000}
+										theme='light'
+									/>
+
 									<button
 										type='submit'
 										className='btn-submit'
+										onClick={onSubmit}
 									>
 										<Link to='/dashboard'>
 											{' '}
-											{checkName ? 'Login' : 'Sign Up'}
+											{checkName ? 'Sign up' : 'Login'}
 										</Link>
 									</button>
 								</div>
 								<div className='cta-container'>
 									<p className='cta-text'>
-										{checkName ? (
+										{!checkName ? (
 											<small>No Account yet?</small>
 										) : (
 											<small>Sign in</small>
@@ -113,7 +124,7 @@ const SignIn = () => {
 										{checkName ? (
 											<Link to='/signup'>Sign Up</Link>
 										) : (
-											<Link to='/signup'>Sign in</Link>
+											<Link to='/signup'>Sign up</Link>
 										)}
 									</span>
 								</div>
@@ -268,6 +279,51 @@ const Wrapper = styled.main`
 		}
 		.ulo-pitch-container {
 			padding: 1rem;
+		}
+		.form-wrapper {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			margin-left: 20px;
+			text-align: left;
+			background-color: white;
+			.cta-container {
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 20px;
+				span {
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
+	@media (orientation: landscape) {
+		.user-btn {
+			margin-bottom: 2rem;
+			margin-top: 2rem;
+			border: 2px solid olivedrab;
+			/* width: 50%; */
+			height: 30px;
+			display: flex;
+			border-radius: 20px;
+			justify-content: space-around;
+			background-color: white;
+			.btn-2 {
+				margin: 0.1rem;
+				width: 10%;
+				border-radius: 20px;
+				background-color: olivedrab;
+				color: white;
+			}
+			.btn-1 {
+				margin: 0.1rem;
+				/* width: 10%; */
+				border-radius: 20px;
+				border: none;
+				background-color: transparent;
+				color: olivedrab;
+			}
 		}
 		.form-wrapper {
 			display: flex;

@@ -29,8 +29,8 @@ const StyledFeaturedWrapper = styled.div`
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: repeat(auto, 1fr);
-	margin: 0px auto;
-	width: 90%;
+	margin: 10px auto;
+	/* width: 90%; */
 
 	.featured-info {
 		text-align: left;
