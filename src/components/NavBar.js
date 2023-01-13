@@ -35,7 +35,8 @@ const StyledNavBar = styled.nav`
 	text-decoration: none;
 	flex-basis: 1;
 	align-items: center;
-	/* margin-left: 3rem; */
+	padding-left: 2rem;
+	padding-right: 2rem;
 
 	a {
 		text-decoration: none;

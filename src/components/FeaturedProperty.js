@@ -29,8 +29,10 @@ const StyledFeaturedWrapper = styled.div`
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	margin: 0 auto;
-	width: 90%;
+	width: 100%;
 	gap: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 
 	.featured-info {
 		text-align: left;
@@ -39,8 +41,8 @@ const StyledFeaturedWrapper = styled.div`
 	.featured-container {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		width: 90%;
-		margin: 2rem auto;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	@media (min-width: 768px) {

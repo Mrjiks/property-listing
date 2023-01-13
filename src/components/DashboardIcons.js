@@ -28,6 +28,8 @@ const Wrapper = styled.div`
 	flex-basis: 1;
 	justify-content: flex-start;
 	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
 
 	img {
 		display: block;

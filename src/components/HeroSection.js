@@ -51,18 +51,22 @@ export default HeroSection;
 const Wrapper = styled.main`
 	display: flex;
 	flex-direction: column;
-	flex-basis: 90%;
+	flex-basis: 100%;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #f0fcfa;
 	overflow: hidden;
 	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
 
 	.wrapper {
 		display: flex;
 		flex-direction: column;
 		width: 90%;
-		margin: 1rem auto;
+		margin: 0 auto;
+		padding-left: 2rem;
+		padding-right: 2rem;
 
 		h1,
 		p {

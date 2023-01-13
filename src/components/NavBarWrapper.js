@@ -25,6 +25,8 @@ const StyledWrapper = styled.div`
 	align-items: center;
 	margin-bottom: 1rem;
 	background-color: olivedrab;
+	padding-left: 2rem;
+	padding-right: rem;
 
 	img {
 		display: block;
