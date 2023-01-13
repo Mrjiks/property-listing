@@ -6,6 +6,8 @@ import { useGlobalContext } from '../components/context';
 import Footer from '../components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Auth0Button from '../components/Auth0Button';
+import LogoutButton from '../components/LogoutButton';
 
 const SignIn = () => {
 	const { showMenu } = useGlobalContext();
@@ -125,6 +127,11 @@ const SignIn = () => {
 									</span>
 								</div>
 							</form>
+							<div>
+								<h4>OR sign in with:</h4>
+								<Auth0Button />
+								<LogoutButton />
+							</div>
 						</div>
 					</div>
 				</div>
