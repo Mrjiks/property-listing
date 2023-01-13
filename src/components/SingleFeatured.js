@@ -44,7 +44,7 @@ const Wrapper = styled.div`
 	.featured-house {
 		width: 300px;
 		height: auto;
-		margin: 0 auto;
+		margin: 10px auto;
 	}
 	.featured-details {
 		border-radius: 8px;

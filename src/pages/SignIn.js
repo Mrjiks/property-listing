@@ -17,18 +17,18 @@ const SignIn = () => {
 	});
 
 	const handleChange = e => {
-		console.log(user.name);
 		setUser({ ...user, [e.target.name]: e.target.value });
 	};
 	const onSubmit = e => {
 		e.preventDefault();
 		const newUser = JSON.parse(localStorage.getItem('user'));
 		if (user.email === newUser.email && user.password === newUser.password) {
-			// redirect
-			window.location = '/dashboard';
 			toast.success('Logged in successfully');
+			setInterval(() => {
+				window.location = '/dashboard';
+			}, 3000);
 		} else {
-			toast.error('Please fill all fields');
+			toast.error('Wrong details');
 		}
 	};
 	return (
@@ -104,12 +104,8 @@ const SignIn = () => {
 									<button
 										type='submit'
 										className='btn-submit'
-										onClick={onSubmit}
 									>
-										<Link to='/dashboard'>
-											{' '}
-											{checkName ? 'Sign up' : 'Login'}
-										</Link>
+										{checkName ? 'Sign up' : 'Login'}
 									</button>
 								</div>
 								<div className='cta-container'>

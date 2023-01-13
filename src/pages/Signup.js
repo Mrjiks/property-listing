@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { MobileMenu, NavBarWrapper } from '../components';
 import { useGlobalContext } from '../components/context';
 import Footer from '../components/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Signup = () => {
 	const { showMenu } = useGlobalContext();
@@ -20,10 +22,19 @@ const Signup = () => {
 	const onSubmit = e => {
 		e.preventDefault();
 		localStorage.setItem('user', JSON.stringify(user));
+		toast.success('Logged in signed up');
+		setInterval(() => {
+			window.location = '/signin';
+		}, 2000);
 	};
 
 	return (
 		<>
+			<ToastContainer
+				position='top-center'
+				autoClose={5000}
+				theme='light'
+			/>
 			{showMenu && <MobileMenu />}
 			<NavBarWrapper />
 			<Wrapper>
@@ -101,10 +112,10 @@ const Signup = () => {
 										onChange={handleChange}
 										required
 									/>
+
 									<button
 										type='submit'
 										className='btn-submit'
-										onClick={onSubmit}
 									>
 										{checkName ? 'Sign Up' : 'Login'}
 									</button>
