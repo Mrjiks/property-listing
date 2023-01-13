@@ -32,7 +32,7 @@ const Wrapper = styled.div`
 	justify-content: space-between;
 	flex-direction: column;
 	.main-view {
-		width: 100%;
+		width: 90%;
 		display: flex;
 		margin: 0 auto;
 		justify-content: center;

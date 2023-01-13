@@ -29,7 +29,7 @@ const StyledFeaturedWrapper = styled.div`
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	margin: 0 auto;
-	width: 100%;
+	width: 90%;
 	gap: 2rem;
 
 	.featured-info {

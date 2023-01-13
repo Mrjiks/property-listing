@@ -75,7 +75,7 @@ const Wrapper = styled.div`
 		justify-content: center;
 		align-items: center;
 		margin: 1rem auto;
-		width: 100%;
+		width: 90%;
 	}
 	.save-search {
 		border: 2px solid olivedrab;

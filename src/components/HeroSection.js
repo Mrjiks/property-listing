@@ -51,7 +51,7 @@ export default HeroSection;
 const Wrapper = styled.main`
 	display: flex;
 	flex-direction: column;
-	flex-basis: 100%;
+	flex-basis: 90%;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #f0fcfa;
