@@ -28,9 +28,9 @@ export default FeaturedProperty;
 const StyledFeaturedWrapper = styled.div`
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(auto, 1fr);
-	margin: 10px auto;
-	/* width: 90%; */
+	margin: 0 auto;
+	width: 100%;
+	gap: 2rem;
 
 	.featured-info {
 		text-align: left;
@@ -39,15 +39,15 @@ const StyledFeaturedWrapper = styled.div`
 	.featured-container {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(auto, 1fr);
-		gap: 2rem;
+		width: 90%;
+		margin: 2rem auto;
 	}
 
 	@media (min-width: 768px) {
 		.featured-container {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			gap: 2rem;
+			gap: 1rem;
 		}
 	}
 	@media (min-width: 1024px) {

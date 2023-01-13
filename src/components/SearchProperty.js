@@ -39,7 +39,8 @@ const StyledSearchWrapper = styled.main`
 	flex-basis: 1;
 	flex-direction: column;
 	justify-content: space-evenly;
-	margin: 0 auto;
+
+	margin: 0px auto;
 
 	.search-form {
 		display: flex;
@@ -52,7 +53,7 @@ const StyledSearchWrapper = styled.main`
 
 		button {
 			margin: 1rem;
-			width: 100%;
+			width: 90%;
 			cursor: pointer;
 
 			:nth-child(3) {

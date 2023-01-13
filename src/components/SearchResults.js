@@ -74,7 +74,7 @@ const Wrapper = styled.div`
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 2rem auto;
+		margin: 1rem auto;
 		width: 100%;
 	}
 	.save-search {

@@ -155,6 +155,7 @@ const Wrapper = styled.main`
 	justify-content: space-between;
 	flex-direction: column;
 	height: 100vh;
+	border: 1px solid red;
 
 	.ulo-pitch-container {
 		display: flex;

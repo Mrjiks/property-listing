@@ -36,16 +36,19 @@ export default SingleFeatured;
 
 const Wrapper = styled.div`
 	display: flex;
+	flex-basis: 1;
+	flex-direction: column;
+	margin: 0 auto;
 	cursor: pointer;
 	img {
 		max-width: 100%;
 		margin-bottom: 0.5rem;
+		object-fit: cover;
 	}
-	.featured-house {
+	/* .featured-house {
 		width: 300px;
 		height: auto;
-		margin: 10px auto;
-	}
+	} */
 	.featured-details {
 		border-radius: 8px;
 		height: auto;
@@ -53,11 +56,13 @@ const Wrapper = styled.div`
 		color: white;
 		transition: all 1s linear;
 		padding: 0.5rem;
+		width: 100%;
+		margin: 1.2rem auto;
 	}
 	.featured-details:hover {
 		background: white;
 		color: olivedrab;
-		transform: scale(1, 1.2);
+		transform: scale(1, 1);
 	}
 
 	.price-info {
@@ -79,7 +84,7 @@ const Wrapper = styled.div`
 		border-radius: 4px;
 		padding: 0.2rem;
 	}
-	@media (orientation: landscape) {
+	/* @media (orientation: landscape) {
 		.wrapper {
 			display: flex;
 			img {
@@ -94,22 +99,16 @@ const Wrapper = styled.div`
 				transform: scale(1);
 			}
 		}
-	}
-	/* @media (min-width: 425px) {
-		.featured-house {
-			width: auto;
-			height: auto;
-			margin: 0 auto;
-		}
 	} */
+
 	@media (min-width: 768px) {
 		.wrapper {
 			display: flex;
-			/* .featured-house {
+			.featured-house {
 				width: 100px;
 				height: auto;
 				margin: 0 auto;
-			} */
+			}
 
 			img {
 				max-width: 100%;
