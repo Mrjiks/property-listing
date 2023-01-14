@@ -20,18 +20,17 @@ export default NavBarWrapper;
 
 const StyledWrapper = styled.div`
 	display: flex;
-	flex-basis: 1;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 1rem;
 	background-color: olivedrab;
-	padding-left: 2rem;
-	padding-right: rem;
 
 	img {
 		display: block;
 		max-width: 100%;
 		object-fit: cover;
 		padding: 1rem;
+		width: 61px;
+		height: 61px;
 	}
 `;

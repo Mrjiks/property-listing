@@ -131,8 +131,6 @@ const Wrapper = styled.main`
 	justify-content: space-between;
 	flex-direction: column;
 	height: 100vh;
-	padding-left: 2rem;
-	padding-right: 2rem;
 
 	.ulo-pitch-container {
 		display: flex;

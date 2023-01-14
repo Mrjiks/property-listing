@@ -49,8 +49,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex-basis: 1;
-	padding-left: 2rem;
-	padding-right: 2rem;
+
 	margin: 0 auto;
 	.container {
 		margin: 0 auto;

@@ -57,26 +57,25 @@ const Wrapper = styled.main`
 	background-color: #f0fcfa;
 	overflow: hidden;
 	margin: 0 auto;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	/* padding-left: 1rem;
+	padding-right: 1rem; */
 
 	.wrapper {
 		display: flex;
 		flex-direction: column;
 		width: 90%;
 		margin: 0 auto;
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 
-		h1,
-		p {
-			text-align: left;
-			margin: 10px;
-			letter-spacing: -0.02em;
+		h1 {
+			text-align: center;
+			margin-bottom: 10px;
+			font-size: 2rem;
 		}
 		p {
 			color: black;
-			text-align: left;
+			text-align: center;
 		}
 		span {
 			color: olivedrab;
@@ -147,11 +146,13 @@ const Wrapper = styled.main`
 			flex-direction: column;
 			width: 90%;
 			margin: 0 auto;
-			h1,
-			p {
+			h1 {
 				text-align: left;
 				margin: 10px;
+				font-size: 3rem;
+				padding-right: 1rem;
 			}
+
 			p {
 				color: black;
 				text-align: left;

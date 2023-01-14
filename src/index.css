@@ -39,12 +39,12 @@ button:hover {
 	opacity: 0.7;
 }
 .myButton {
-	background-color: rgb(205, 107, 57);
+	background-color: rgb(240, 235, 233);
 	border-radius: 8px;
 	border: 1px solid #4b8f29;
 	display: inline-block;
 	cursor: pointer;
-	color: #ffffff;
+	color: olivedrab;
 	font-family: inherit;
 	font-size: 13px;
 	font-weight: bold;
