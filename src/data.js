@@ -84,7 +84,8 @@ export const featuredHouse = [
 	{
 		id: 7,
 		title: 'Principal Paradigm Specialist',
-		imageUrl: 'https://www.laurau.com/wp-content/uploads/Blog-Headers-12-1.png',
+		imageUrl:
+			'https://www.mydomaine.com/thmb/dke2LC6lH21Pvqwd2lI6AIutnDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg',
 		price: 563.11,
 		tag: 'New',
 		address: 'Abbott Squares',

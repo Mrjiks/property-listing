@@ -62,7 +62,9 @@ body {
 	margin: 0 auto;
 	height: 100%;
 }
-
+a {
+	text-decoration: none;
+}
 @keyframes load-spinner {
 	to {
 		transform: rotate(360deg);

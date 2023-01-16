@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { FeaturedProperty } from './components';
 import SearchResults from './components/SearchResults';
 import SharedLayout from './components/SharedLayout';
 import Agents from './pages/Agents';
@@ -15,14 +14,13 @@ function App() {
       <Router>
         <Routes>
           <Route path="dashboard" element={<SharedLayout />}>
-            <Route index path="stats" element={"Stats"} />
-            <Route path="listings" element={"Listings"} />
-            <Route path="properties" element={"Properties"} />
-            <Route path="market" element={"Markets"} />
-            <Route path="profile" element={"User profile"} />
+          <Route index path="stats" element={"Stats"} />
+          <Route path="listings" element={"Listings"} />
+          <Route path="properties" element={"Properties"} />
+          <Route path="market" element={"Markets"} />
+          <Route path="profile" element={"User profile"} />
           </Route>
           <Route path="/" element={<Landing />} />
-          
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="agents" element={<Agents />} />
