@@ -10,7 +10,7 @@ import SocialLogin from '../components/SocialLogin';
 
 const SignIn = () => {
 	const { showMenu } = useGlobalContext();
-	const [checkName, setName] = React.useState(false);
+	const [checkName] = React.useState(false);
 	const [user, setUser] = React.useState({
 		name: '',
 		email: '',

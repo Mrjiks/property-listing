@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion, useScroll, useSpring } from 'framer-motion';
 
 import {
 	SearchProperty,

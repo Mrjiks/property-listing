@@ -5,7 +5,7 @@ import { useGlobalContext } from './context';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
-	const { toggleMenu, showMenu, closeMenu } = useGlobalContext();
+	const { toggleMenu, showMenu } = useGlobalContext();
 	return (
 		<StyledNavBar>
 			<div className='hide-menu'>

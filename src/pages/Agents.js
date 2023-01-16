@@ -1,7 +1,7 @@
 import React from 'react';
 import { MobileMenu, NavBarWrapper } from '../components';
 import { useGlobalContext } from '../components/context';
-import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { LoremIpsum } from '../components/LoremIpsum';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
