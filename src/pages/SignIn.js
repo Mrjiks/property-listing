@@ -257,14 +257,16 @@ const Wrapper = styled.main`
 	@media (min-width: 768px) {
 		.container {
 			display: flex;
-			width: 100%;
+			width: 90%;
 			justify-content: space-between;
 			align-items: center;
-			border-radius: 8px;
+			margin: 0 auto;
 			margin-bottom: 20px;
 		}
 		.ulo-pitch-container {
-			padding: 1rem;
+			margin: 2rem auto;
+			width: 90%;
+			padding: 2rem;
 		}
 		.form-wrapper {
 			display: flex;
