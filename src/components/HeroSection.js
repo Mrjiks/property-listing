@@ -57,8 +57,6 @@ const Wrapper = styled.main`
 	background-color: #f0fcfa;
 	overflow: hidden;
 	margin: 0 auto;
-	/* padding-left: 1rem;
-	padding-right: 1rem; */
 
 	.wrapper {
 		display: flex;

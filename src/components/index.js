@@ -8,6 +8,7 @@ import DashboardNav from './DashboardNav';
 import SideBarLogo from './SideBarLogo';
 import DashboardIcons from './DashboardIcons';
 import MobileMenuLink from './MobileMenuLink';
+import DetailHouse from './DetailsHouse';
 
 export {
 	NavBar,
@@ -20,4 +21,5 @@ export {
 	DashboardNav,
 	DashboardIcons,
 	MobileMenuLink,
+	DetailHouse,
 };

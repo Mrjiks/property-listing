@@ -7,6 +7,7 @@ import {
 	NavBarWrapper,
 	FeaturedProperty,
 	MobileMenu,
+	DetailHouse,
 } from '../components';
 
 import { useGlobalContext } from '../components/context';
@@ -23,7 +24,7 @@ function Landing() {
 			<FeaturedProperty />
 
 			{showMenu && <MobileMenu />}
-
+			{/* <DetailHouse /> */}
 			<Footer />
 		</Wrapper>
 	);
@@ -33,7 +34,7 @@ export default Landing;
 
 const Wrapper = styled.div`
 	display: flex;
-	width: 100%;
+	width: 90vw;
 	flex-direction: column;
 	/* padding: 1rem; */
 	margin: 0 auto;

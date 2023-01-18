@@ -4,148 +4,85 @@ import { Link } from 'react-router-dom';
 
 const SearchProperty = () => {
 	return (
-		<StyledSearchWrapper>
+		<Wrapper>
 			<form className='search-form'>
-				<div className='categories'>
-					<button type='button'>House</button>
-					<button type='button'>Land</button>
-					<button type='button'>Commercial</button>
-				</div>
-
-				<div className='search-wrapper'>
-					<input
-						className='search-input'
-						type='text'
-						placeholder='Enter an address, neighborhood, city'
-					/>
-					<button
-						type='submit'
-						className='submit-btn'
-					>
-						<Link to='/search'>
-							<BsSearch className='search-icon' />
-						</Link>
-					</button>
-				</div>
+				<select
+					type='filter'
+					className='submit-btn'
+				>
+					<option value='Rent'>Rent</option>
+					<option value='Buy'>Buy</option>
+					<option value='Agent'>Agents</option>
+				</select>
+				<input
+					className='search-input'
+					type='text'
+					placeholder='Enter an address, neighborhood, city'
+				/>
+				<button
+					type='submit'
+					className='submit-btn'
+				>
+					<Link to='/search'>
+						<BsSearch className='search-icon' />
+					</Link>
+				</button>
 			</form>
-		</StyledSearchWrapper>
+		</Wrapper>
 	);
 };
 
 export default SearchProperty;
 
-const StyledSearchWrapper = styled.main`
+const Wrapper = styled.main`
 	display: flex;
-	flex-basis: 1;
-	flex-direction: column;
-	justify-content: space-evenly;
-
-	margin: 0px auto;
+	margin: 10px auto;
+	width: 100%;
+	height: auto;
+	justify-content: center;
 
 	.search-form {
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	.categories {
-		display: flex;
-		justify-content: space-evenly;
+		width: 90%;
+		height: 100px;
+		justify-content: center;
+		align-items: center;
 
-		button {
-			margin: 1rem;
-			width: 90%;
-			cursor: pointer;
+		.search-input {
+			width: 100%;
+			height: 50%;
+			::placeholder {
+				padding: 0.3rem;
+			}
 
-			:nth-child(3) {
-				color: white;
-				border-radius: 8px;
-				background: olivedrab;
+			&:hover {
+				outline: 1px solid olivedrab;
 			}
 		}
-	}
-	.search-wrapper {
-		position: relative;
-		width: 100%;
-		.search-input {
-			background-color: #f0fcfa;
-			border: 1px solid olivedrab;
-			border-radius: 8px;
-			height: 45px;
-			width: 100%;
-		}
 		.submit-btn {
-			position: absolute;
-			left: 85%;
-			width: 20px;
-			height: 10px;
-			top: 25%;
+			height: 50%;
+			border: 1px solid gray;
 
-			background-color: #f0fcfa;
-		}
-		.search-icon {
-			font-size: 1.3rem;
-			color: olivedrab;
-		}
-		.categories {
-			display: flex;
-			justify-content: space-around;
-			margin: 10px auto;
-			background-color: white;
-			width: 100%;
-		}
-
-		::placeholder {
-			color: #453b33;
-			text-align: left;
-			padding: 2rem;
+			&:hover {
+				outline: 1px solid olivedrab;
+			}
 		}
 	}
 
 	@media (min-width: 768px) {
-		.search-wrapper {
-			position: relative;
-			font-size: 2rem;
-			.submit-btn {
-				position: absolute;
-				left: 80%;
-				width: 50px;
-				height: 30px;
-				top: 25%;
-				.search-icon {
-					font-size: 2rem;
-					color: olivedrab;
-				}
-			}
-		}
-		.search-input {
-			background-color: #f0fcfa;
-			border: 1px solid olivedrab;
-			border-radius: 8px;
-			height: 45px;
-			width: 100%;
-			margin: 0 auto;
-
-			margin-bottom: 10px;
-			::placeholder {
-				color: #453b33;
-				text-align: left;
-				padding: 2rem;
-			}
-		}
-		.categories {
+		.search-form {
 			display: flex;
-			justify-content: space-around;
+			width: 50%;
+			height: 100px;
+			justify-content: center;
+			align-items: center;
 
-			button {
-				margin: 1rem;
+			.search-input {
 				width: 100%;
-				cursor: pointer;
-
-				:nth-child(3) {
-					color: white;
-					border-radius: 8px;
-					background: olivedrab;
-				}
+				height: 50%;
+			}
+			.submit-btn {
+				height: 50%;
 			}
 		}
 	}
