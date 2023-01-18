@@ -61,7 +61,7 @@ const Wrapper = styled.main`
 	.wrapper {
 		display: flex;
 		flex-direction: column;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		padding-left: 1rem;
 		padding-right: 1rem;
@@ -142,7 +142,7 @@ const Wrapper = styled.main`
 		.container {
 			display: flex;
 			flex-direction: column;
-			width: 90%;
+			width: 100%;
 			margin: 0 auto;
 			h1 {
 				text-align: left;

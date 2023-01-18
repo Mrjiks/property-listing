@@ -34,7 +34,7 @@ export default Landing;
 
 const Wrapper = styled.div`
 	display: flex;
-	width: 90vw;
+	width: 100%;
 	flex-direction: column;
 	/* padding: 1rem; */
 	margin: 0 auto;
