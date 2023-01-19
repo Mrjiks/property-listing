@@ -46,6 +46,7 @@ const StyledFeaturedWrapper = styled.div`
 	gap: 2rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	overflow: hidden;
 
 	.featured-info {
 		text-align: left;

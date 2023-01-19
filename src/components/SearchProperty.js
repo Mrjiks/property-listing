@@ -17,7 +17,7 @@ const SearchProperty = () => {
 				<input
 					className='search-input'
 					type='text'
-					placeholder='Enter an address, neighborhood, city'
+					placeholder='Enter an address, neighborhood, city to find our latest listings'
 				/>
 				<button
 					type='submit'
