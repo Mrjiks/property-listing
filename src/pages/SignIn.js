@@ -60,8 +60,8 @@ const SignIn = () => {
           <div className='form-wrapper'>
             <div>
               <form onSubmit={onSubmit}>
-                {checkName && <label htmlFor='signin'>Login</label>}
                 <div className='form-container'>
+                  <label htmlFor='signin'>View Dashboard</label>
                   <input
                     type='email'
                     name='email'
