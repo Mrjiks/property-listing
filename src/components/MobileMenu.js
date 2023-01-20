@@ -15,7 +15,7 @@ const showNav = {
 };
 
 const MobileMenu = () => {
-	const { toggleMenu, showMenu } = useGlobalContext();
+	const { toggleMenu} = useGlobalContext();
 
 	return (
 		<StyledMenuWrapper>
