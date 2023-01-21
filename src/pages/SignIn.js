@@ -85,18 +85,18 @@ const SignIn = () => {
                     {checkName ? "Sign up" : "Login"}
                   </button>
                   <SocialLogin />
-                </div>
-                <div className='cta-container'>
-                  <p className='cta-text'>
-                    {!checkName ? <small>No Account yet?</small> : <small>Sign in</small>}{" "}
-                  </p>
-                  <span>
-                    {checkName ? (
-                      <Link to='/signup'>Sign Up</Link>
-                    ) : (
-                      <Link to='/signup'>Sign up</Link>
-                    )}
-                  </span>
+                  <div className='cta-container'>
+                    <p className='cta-text'>
+                      {!checkName ? <small>No Account yet?</small> : <small>Sign in</small>}{" "}
+                    </p>
+                    <span>
+                      {checkName ? (
+                        <Link to='/signup'>Sign Up</Link>
+                      ) : (
+                        <Link to='/signup'>Sign up</Link>
+                      )}
+                    </span>
+                  </div>
                 </div>
               </form>
             </div>
@@ -169,41 +169,13 @@ const Wrapper = styled.main`
     background-color: #f0fcfa;
     flex-direction: column;
     border-radius: 8px;
-    margin: 0 auto;
 
-    .user-btn {
-      margin-bottom: 1rem;
-      margin-top: 2rem;
-      border: 2px solid olivedrab;
-      width: 40%;
-      height: 30px;
-      display: flex;
-      border-radius: 20px;
-      justify-content: space-around;
-      background-color: white;
-      .btn-2 {
-        margin: 0.1rem;
-        width: 50%;
-        border-radius: 20px;
-        background-color: olivedrab;
-        color: white;
-      }
-      .btn-1 {
-        margin: 0.1rem;
-        width: 50%;
-        border-radius: 20px;
-        border: none;
-        background-color: transparent;
-        color: olivedrab;
-      }
-    }
     .form-container {
       display: flex;
       flex-direction: column;
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      /* margin: 10px; */
       text-align: left;
 
       input {

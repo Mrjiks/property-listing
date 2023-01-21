@@ -36,7 +36,6 @@ const Wrapper = styled.div`
   display: flex;
   max-width: 100%;
   flex-direction: column;
-
   margin: auto;
   .progress-bar {
     position: fixed;

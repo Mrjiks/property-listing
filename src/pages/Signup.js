@@ -56,12 +56,12 @@ const Signup = () => {
           <div className='form-wrapper'>
             <div>
               <form onSubmit={onSubmit}>
-                {checkName ? (
-                  <label htmlFor='name'>Full Name</label>
-                ) : (
-                  <label htmlFor='signin'>Login</label>
-                )}
                 <div className='form-container'>
+                  {checkName ? (
+                    <label htmlFor='name'>Full Name</label>
+                  ) : (
+                    <label htmlFor='signin'>Login</label>
+                  )}
                   {checkName && (
                     <input
                       type='text'
@@ -95,18 +95,19 @@ const Signup = () => {
                   <button type='submit' className='btn-submit'>
                     {checkName ? "Sign Up" : "Login"}
                   </button>
-                </div>
-                <div className='cta-container'>
-                  <p className='cta-text'>
-                    {checkName ? <small>Have an account already?</small> : <small>Sign in</small>}{" "}
-                  </p>
-                  <span>
-                    {checkName ? (
-                      <Link to='/signin'>Signin</Link>
-                    ) : (
-                      <Link to='/signup'>Sign Up</Link>
-                    )}
-                  </span>
+
+                  <div className='cta-container'>
+                    <p className='cta-text'>
+                      {checkName ? <small>Have an account already?</small> : <small>Sign in</small>}{" "}
+                    </p>
+                    <span>
+                      {checkName ? (
+                        <Link to='/signin'>Signin</Link>
+                      ) : (
+                        <Link to='/signup'>Sign Up</Link>
+                      )}
+                    </span>
+                  </div>
                 </div>
               </form>
             </div>
@@ -178,44 +179,18 @@ const Wrapper = styled.main`
     flex-direction: column;
     border-radius: 8px;
 
-    .user-btn {
-      margin-bottom: 2rem;
-      margin-top: 2rem;
-      border: 2px solid olivedrab;
-      width: 40%;
-      height: 30px;
-      display: flex;
-      border-radius: 20px;
-      justify-content: space-around;
-      background-color: white;
-      .btn-2 {
-        margin: 0.1rem;
-        width: 50%;
-        border-radius: 20px;
-        background-color: olivedrab;
-        color: white;
-      }
-      .btn-1 {
-        margin: 0.1rem;
-        width: 50%;
-        border-radius: 20px;
-        border: none;
-        background-color: transparent;
-        color: olivedrab;
-      }
-    }
     .form-container {
       display: flex;
       flex-direction: column;
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      /* margin: 10px; */
+      margin-top: 30px;
       text-align: left;
 
       input {
         margin: 15px;
-        width: 100%;
+        width: 200px;
         height: 30px;
         border-radius: 8px;
         border: 1px solid gray;
@@ -225,7 +200,7 @@ const Wrapper = styled.main`
       }
       .btn-submit {
         margin: 10px;
-        width: 100%;
+        width: 200px;
         height: 30px;
         border-radius: 4px;
         color: white;
@@ -236,6 +211,7 @@ const Wrapper = styled.main`
       display: flex;
       flex-direction: row;
       margin-bottom: 5rem;
+      width: 90%;
       span,
       p {
         margin-left: 1rem;
