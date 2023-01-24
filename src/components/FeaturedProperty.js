@@ -12,6 +12,7 @@ const FeaturedProperty = () => {
           <p className='adv'>Advertize with us today!</p>
         </div>
       </div>
+
       <div className='featured-container'>
         {featuredHouse.map((house) => {
           return <SingleFeatured key={house.id} {...house} />;

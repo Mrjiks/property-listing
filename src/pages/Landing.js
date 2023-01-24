@@ -22,9 +22,7 @@ function Landing() {
       <HeroSection />
       <SearchProperty />
       <FeaturedProperty />
-
       {showMenu && <MobileMenu />}
-      {/* <DetailHouse /> */}
       <Footer />
     </Wrapper>
   );
@@ -37,13 +35,4 @@ const Wrapper = styled.div`
   max-width: 100%;
   flex-direction: column;
   margin: auto;
-  .progress-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: var(--red);
-    transform-origin: 0%;
-  }
 `;

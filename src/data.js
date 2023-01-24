@@ -22,8 +22,7 @@ export const NavLinks = [
   { id: 3, text: "Sign In", path: "/signin" },
   { id: 4, text: "Sign Up", path: "/signup" },
   { id: 5, text: "Dashboard", path: "/signin" },
-  { id: 6, text: "Bookings", path: "#" },
-  { id: 7, text: "Special Deals", path: "#" },
+  { id: 6, text: "Special Deals", path: "#" },
 ];
 
 export const featuredHouse = [
