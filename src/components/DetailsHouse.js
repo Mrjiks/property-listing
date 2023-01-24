@@ -66,11 +66,12 @@ const Wrapper = styled.main`
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
   box-sizing: border-box;
   .nav-container {
     display: flex;
+    width: 100%;
     height: 80px;
+    padding: 6px;
     background-color: olivedrab;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +88,9 @@ const Wrapper = styled.main`
     height: auto;
     width: 100%;
   }
-
+  .search-location {
+    padding: 0 16px;
+  }
   .img-detail img {
     max-width: 100%;
     display: block;
@@ -107,7 +110,7 @@ const Wrapper = styled.main`
   .date-listed {
     position: absolute;
     top: 10px;
-    left: 0;
+    left: 5px;
     color: olivedrab;
     background-color: black;
     opacity: 0.7;
@@ -115,7 +118,7 @@ const Wrapper = styled.main`
   .bookmark {
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 5px;
     color: olivedrab;
   }
   .price {
