@@ -55,7 +55,12 @@ const SingleHouse = () => {
             </div>
           </div>
         </div>
+        <div>
+          <h4>Tour Guide:</h4>
+          <p>{house.tour}</p>
+        </div>
       </div>
+
       <Link to='/' className='tour'>
         <button type='button'>Book a Tour</button>
       </Link>

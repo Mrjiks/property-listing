@@ -34,6 +34,7 @@ export const featuredHouses = [
     price: 7003,
     tag: "New",
     address: "6304 Barrows Corners",
+    tour: "Et est id pariatur ex beatae illo maxime. Voluptas eaque ut deleniti error aliquam sint. Incidunt delectus minus architecto. Quaerat fuga voluptate deleniti autem porro maiores. Nulla non natus eos. Consequatur id adipisci delectus aut blanditiis porro rem.",
   },
   {
     id: 2,
@@ -43,6 +44,7 @@ export const featuredHouses = [
     price: 4589,
     tag: "New",
     address: "3895 Willow Lakes",
+    tour: "Et est id pariatur ex beatae illo maxime. Voluptas eaque ut deleniti error aliquam sint. Incidunt delectus minus architecto. Quaerat fuga voluptate deleniti autem porro maiores. Nulla non natus eos. Consequatur id adipisci delectus aut blanditiis porro rem.",
   },
   {
     id: 3,
@@ -51,6 +53,7 @@ export const featuredHouses = [
     price: 2900,
     tag: "New",
     address: "332 Yundt Trail",
+    tour: "Et est id pariatur ex beatae illo maxime. Voluptas eaque ut deleniti error aliquam sint. Incidunt delectus minus architecto. Quaerat fuga voluptate deleniti autem porro maiores. Nulla non natus eos. Consequatur id adipisci delectus aut blanditiis porro rem.",
   },
   {
     id: 4,
@@ -59,6 +62,7 @@ export const featuredHouses = [
     price: 8000.11,
     tag: "New",
     address: "683 Parker Passage",
+    tour: "Et est id pariatur ex beatae illo maxime. Voluptas eaque ut deleniti error aliquam sint. Incidunt delectus minus architecto. Quaerat fuga voluptate deleniti autem porro maiores. Nulla non natus eos. Consequatur id adipisci delectus aut blanditiis porro rem.",
   },
   {
     id: 5,
@@ -68,6 +72,7 @@ export const featuredHouses = [
     price: 5630,
     tag: "New",
     address: "1148 Sibyl River",
+    tour: "Et est id pariatur ex beatae illo maxime. Voluptas eaque ut deleniti error aliquam sint. Incidunt delectus minus architecto. Quaerat fuga voluptate deleniti autem porro maiores. Nulla non natus eos. Consequatur id adipisci delectus aut blanditiis porro rem.",
   },
   {
     id: 6,
@@ -77,6 +82,7 @@ export const featuredHouses = [
     price: 63000,
     tag: "New",
     address: "Abbott Squares",
+    tour: "Et est id pariatur ex beatae illo maxime. Voluptas eaque ut deleniti error aliquam sint. Incidunt delectus minus architecto. Quaerat fuga voluptate deleniti autem porro maiores. Nulla non natus eos. Consequatur id adipisci delectus aut blanditiis porro rem.",
   },
   {
     id: 7,
@@ -86,5 +92,6 @@ export const featuredHouses = [
     price: 10000000,
     tag: "New",
     address: "Abbott Squares",
+    tour: "Et est id pariatur ex beatae illo maxime. Voluptas eaque ut deleniti error aliquam sint. Incidunt delectus minus architecto. Quaerat fuga voluptate deleniti autem porro maiores. Nulla non natus eos. Consequatur id adipisci delectus aut blanditiis porro rem.",
   },
 ];
