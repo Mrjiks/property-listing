@@ -34,9 +34,10 @@ const FeaturedProperty = () => {
                     }}>
                     N{price}
                   </motion.p>
-                  <p className='tag'>{tag}</p>
+                  <p className='tag'>
+                    <Link to={`/search/${house.id}`}>more info</Link>
+                  </p>
                 </div>
-                <Link to={`/search/${house.id}`}>more info</Link>
               </div>
             </div>
           );

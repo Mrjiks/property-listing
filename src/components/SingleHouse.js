@@ -50,7 +50,7 @@ const SingleHouse = () => {
                 <div className='house-info'>
                   <span>4 bds</span>|<span>33 ba</span>|2,168 sqft -House for sale.
                 </div>
-                <address>{address}</address>
+                <address>location: {address}</address>
               </div>
             </div>
           </div>
