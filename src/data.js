@@ -25,13 +25,13 @@ export const NavLinks = [
   { id: 6, text: "Special Deals", path: "#" },
 ];
 
-export const featuredHouse = [
+export const featuredHouses = [
   {
     id: 1,
     title: "Assumenda quia ducimus amet ipsam impedit voluptatum quis.",
     imageUrl:
       "https://www.steyncity.co.za/storage/2022/09/SteynCity-Story-October_Modern-Luxe-featured-600x476.jpg",
-    price: 563.11,
+    price: 7003,
     tag: "New",
     address: "6304 Barrows Corners",
   },
@@ -40,7 +40,7 @@ export const featuredHouse = [
     title: "Internal Tactics Designer",
     imageUrl:
       "https://www.mydomaine.com/thmb/dke2LC6lH21Pvqwd2lI6AIutnDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
-    price: 563.11,
+    price: 4589,
     tag: "New",
     address: "3895 Willow Lakes",
   },
@@ -48,7 +48,7 @@ export const featuredHouse = [
     id: 3,
     title: "Global Identity Manager",
     imageUrl: "https://i.pinimg.com/originals/95/5c/74/955c74cfcd6266fc7e9d0bf06df3980a.jpg",
-    price: 563.11,
+    price: 2900,
     tag: "New",
     address: "332 Yundt Trail",
   },
@@ -56,7 +56,7 @@ export const featuredHouse = [
     id: 4,
     title: "Future Research Planner",
     imageUrl: "https://i.pinimg.com/originals/95/5c/74/955c74cfcd6266fc7e9d0bf06df3980a.jpg",
-    price: 563.11,
+    price: 8000.11,
     tag: "New",
     address: "683 Parker Passage",
   },
@@ -65,7 +65,7 @@ export const featuredHouse = [
     title: "Corporate Functionality Representative",
     imageUrl:
       "https://www.buildsense.com/wp-content/uploads/2017/10/01-Fred-low-res-30_small-600x476.jpg",
-    price: 563.11,
+    price: 5630,
     tag: "New",
     address: "1148 Sibyl River",
   },
@@ -74,7 +74,7 @@ export const featuredHouse = [
     title: "Principal Paradigm Specialist",
     imageUrl:
       "https://www.mydomaine.com/thmb/dke2LC6lH21Pvqwd2lI6AIutnDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
-    price: 563.11,
+    price: 63000,
     tag: "New",
     address: "Abbott Squares",
   },
@@ -83,7 +83,7 @@ export const featuredHouse = [
     title: "Principal Paradigm Specialist",
     imageUrl:
       "https://www.mydomaine.com/thmb/dke2LC6lH21Pvqwd2lI6AIutnDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
-    price: 563.11,
+    price: 10000000,
     tag: "New",
     address: "Abbott Squares",
   },

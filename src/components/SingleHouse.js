@@ -3,10 +3,17 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import MobileMenu from "./MobileMenu";
 import SearchProperty from "./SearchProperty";
-import { useGlobalContext } from "../components/context";
+import { useGlobalContext } from "./context";
+import { featuredHouses } from "../data";
+import { useParams } from "react-router-dom";
 
-const DetailsHouse = () => {
+const SingleHouse = () => {
   const { showMenu, toggleMenu } = useGlobalContext();
+  const { houseId } = useParams();
+
+  const house = featuredHouses.find((house) => house.id == houseId);
+
+  const { imageUrl, title, address, price } = house;
   return (
     <Wrapper>
       <div className='nav-container'>
@@ -33,33 +40,30 @@ const DetailsHouse = () => {
           <div className='house-card'>
             <div>
               <div className='img-detail'>
-                <img
-                  src='https://www.mydomaine.com/thmb/dke2LC6lH21Pvqwd2lI6AIutnDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg'
-                  alt='house'
-                />
+                <img src={imageUrl} alt={title} />
               </div>
 
               <span className='date-listed'>6 days on Dream Homes</span>
               <span className='bookmark'>❤️</span>
-              <p className='price'>$5990.00</p>
+              <p className='price'>${price}</p>
               <div className='house-info-container'>
                 <div className='house-info'>
                   <span>4 bds</span>|<span>33 ba</span>|2,168 sqft -House for sale.
                 </div>
-                <address>24888 Bauch Burg</address>
-                <Link to='/dashboard' className='tour'>
-                  <button type='button'>Book a Tour</button>
-                </Link>
+                <address>{address}</address>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Link to='/' className='tour'>
+        <button type='button'>Book a Tour</button>
+      </Link>
     </Wrapper>
   );
 };
 
-export default DetailsHouse;
+export default SingleHouse;
 
 const Wrapper = styled.main`
   display: flex;

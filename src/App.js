@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { DetailHouse } from "./components";
+import { DetailHouse, FeaturedProperty } from "./components";
 import SearchResults from "./components/SearchResults";
 import SharedLayout from "./components/SharedLayout";
+import SingleHouse from "./components/SingleHouse";
 import Agents from "./pages/Agents";
 import Landing from "./pages/Landing";
 import SignIn from "./pages/SignIn";
@@ -24,8 +25,9 @@ function App() {
         <Route path='/signin' element={<SignIn />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='agents' element={<Agents />} />
-        <Route path='/search' element={<SearchResults />} />
-        <Route path='search/detailsHouse' element={<DetailHouse />} />
+        <Route path='/search' element={<FeaturedProperty />} />
+        <Route path='search/:houseId' element={<SingleHouse />} />
+        <Route path='*' element={<h2>Page Not Found</h2>} />
       </Routes>
     </Router>
   );
