@@ -59,11 +59,10 @@ const SingleHouse = () => {
           <h4>Tour Guide:</h4>
           <p>{house.tour}</p>
         </div>
+        <Link to='/' className='tour'>
+          <button type='button'>Book a Tour</button>
+        </Link>
       </div>
-
-      <Link to='/' className='tour'>
-        <button type='button'>Book a Tour</button>
-      </Link>
     </Wrapper>
   );
 };
