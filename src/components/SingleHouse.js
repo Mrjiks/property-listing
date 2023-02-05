@@ -48,7 +48,7 @@ const SingleHouse = () => {
               <p className='price'>${price}</p>
               <div className='house-info-container'>
                 <div className='house-info'>
-                  <span>4 bds</span>|<span>33 ba</span>|2,168 sqft -House for sale.
+                  <span>4 bds</span>|<span>39 ba</span>|2,168 sqft -House for sale.
                 </div>
                 <address>location: {address}</address>
               </div>
