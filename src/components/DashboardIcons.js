@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+ 
 
   img {
     display: block;
@@ -35,5 +36,6 @@ const Wrapper = styled.div`
   .link {
     color: olivedrab;
     text-decoration: none;
+    
   }
 `;
